@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Website</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#LOGO_MAIN_DIV{
+  width: 100%;
+  height:auto;
+  padding: 0%;
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+#header_homepage_Logo_div{
+  width: 100%;
+  height: auto;
+  padding:0% 2%;
+  
+}
+
+
+#LOGO_MAIN_DIV img{
+  width:20%;
+  height: auto;
+  padding:1%;
+  margin: 0% 4%;
+  
+}
+
+#header_homepage_items_div{
+  width: 100%;
+  height: auto;
+  /* padding: 4%; */
+  text-align: right;
+  padding:4%;
+  
+
+
+}
+#header_homepage_items_div img{
+  width:40px;
+  height: auto;
+  margin: 0% 1%;
+ padding:0% 1%;
+ transition: all 1s ease;
+ 
+}
+
+/* #header_homepage_items_div :hover{
+  width: 45px;
+  transform: translateY(-2px);
+} */
+
+
+nav{
+    width: 100%;
+    height: auto;
+    padding:0% 2%;
+    background-color:rgb(15, 178, 178);
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+
+nav a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+padding:1% 2%;
+margin: 0% 2%;
+border: none;
+border-right: 1px solid white;
+font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  font-variation-settings:
+
+}
+
+#Logo_div{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin: 0% 2%;
+}
+
+#logo_nav_text{
+     width: 100%;
+    height: auto;
+    padding:2%;
+    margin: 0% 2%;
+}
+
+
+#logo_nav_btn_div{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin: 0% 2%;
+    
+}
+
+#Add_kart_btn{
+    width:auto;
+    padding: 2%;
+    height: auto;
+    border: none;
+    background-color:rgb(15, 178, 178);
+    margin: 0% 2%;
+}
+#Add_kart_btn svg{
+    width: auto;
+    padding: 2%;
+    background-image: none;
+    cursor: pointer;
+}
+
+#notification_btn{
+    width:auto;
+    padding: 2%;
+    height: auto;
+    margin: 0% 2%;
+    border: none;
+    background-color:rgb(15, 178, 178);
+}
+
+
+#notification_btn svg{
+    width: auto;
+    padding: 2%;
+    background-image: none;
+    cursor: pointer;
+}
+
+#Nav_login_btn{
+    width:auto;
+    padding: 2%;
+    height: auto;
+    margin: 0% 2%;
+    border: none;
+    background-color:rgb(15, 178, 178);
+
+}
+#Nav_login_btn svg{
+    width: auto;
+    padding: 2%;
+    background-image: none;
+    cursor: pointer;
+}
+
+#Nav_login_btn{
+  text-align: right;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  width:150px;
+  padding:1%;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  margin-top: -2%;
+  border: none;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  margin:22% 0%;
+  padding: 4% 0%;
+
+
+}
+
+.dropdown-content a:hover {
+  border: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#Signup_btn{
+    width:auto;
+    height: auto;
+    padding:8%;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  
+}
+
+#HOME_MAIN_DIV{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:1% 2%;
+  
+}
+
+#home_categries_div{
+    width: 100%;
+    height: auto;
+    padding:2% 3%;
+    margin:1% 2%;
+}
+
+
+#home_categries_div h1{
+color:rgb(15, 178, 178);
+    font-size: 38px;
+    padding: 2% 0%;
+    margin: 1% 0%;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+#home_categries_div p{
+    color: black;
+    font-size: 16px;
+    padding: 2% 0%;
+    margin:0%;
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+ 
+}
+
+#homepage_apply_btn{
+    width:30%;
+    height: auto;
+    padding:2%;
+    background-color: rgb(15, 178, 178);;
+    border: none;
+    color: white;
+    margin:2% 0%;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+
+#homepage_apply_btn:hover{
+  background-color: rgb(243, 243, 243);
+  color: black;
+  border: none;
+  border-left: 4px solid rgb(15, 178, 178);
+  border-right: 4px solid rgb(15, 178, 178);
+  box-shadow: 2px 2px 4px solid grey;
+}
+
+#homepage_signup_btn{
+  width:30%;
+    height: auto;
+    padding:2%;
+    background-color: rgb(243, 243, 243);
+  color: black;
+  border: none;
+  border-left: 4px solid rgb(15, 178, 178);
+  border-right: 4px solid rgb(15, 178, 178);
+  box-shadow: 2px 2px 4px solid grey;
+    margin:2% 1%;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+#homepage_signup_btn:hover{
+  background-color: rgb(15, 178, 178);;
+  color: white;
+
+}
+
+#marque_div{
+  width: 100%;
+  height:auto;
+  padding:1% 2%;
+  background-color: rgb(15, 178, 178);;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+ 
+
+}
+
+#ABOUT_MAIN_TEXT_DIV{
+  width: 100%;
+  height: auto;
+  padding: 0% 4%;
+}
+
+#ABOUT_MAIN_TEXT_DIV p{
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  padding: 0% 2%;
+
+}
+
+#ABOUT_MAIN_DIV{
+  width: 100%;
+  height: auto;
+  padding:0% 4%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+ 
+}
+
+#about_categries_image_div{
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+#about_categries_image_div img{
+  width: 95%;
+  height: auto;
+  padding:2% 4%;
+
+}
+
+#about_categries_div{
+  width: 100%;
+  height: auto;
+  padding:8% 2%;
+  margin: 2% 0%;
+  
+}
+
+#about_categries_div h1{
+  font-size: 40px;
+  padding: 2% 0%;
+font-family: "Roboto Slab", serif;
+font-weight: 500;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+
+#about_categries_div p{
+  padding: 2% 0%;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+#STEP_MAIN_DIV{
+  width: 100%;
+  height: auto;
+  padding: 4% 12%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#step_categries_div{
+  width: 95%;
+  height: auto;
+  padding:4%;
+  margin:6% 4%;
+  text-align: center;
+ border: 1px solid rgb(15, 178, 178);
+  transition: all 1s ease;
+  scale:95%;
+}
+#step_categries_div:hover{
+  background-color: rgb(15, 178, 178);;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0px 2px 2px teal;
+  border: none;
+  scale: 100%;
+}
+
+
+
+#step_categries_div img{
+  width:140px;
+  height: auto;
+  border-radius: 90%;
+}
+
+
+#step_categries_div p{
+ 
+  padding: 2%;
+  margin: 2% 0%;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+
+
+#step_categries_div h1{
+
+  font-size: 30px;
+  padding: 2% 0%;
+font-family: "Roboto Slab", serif;
+font-weight: 500;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+#DATA_COMPANY_all_options{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#DATA_COMPANY_all_options h1{
+  font-size: 50px;
+  padding: 2% 0%;
+  margin: 1% 0%;
+  color:rgb(15, 178, 178);
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+#DATA_COMPANY_IMAGE_MAIN_DIV{
+  width: 100%;
+  height: auto;
+  padding:1% 4%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+
+#amazon_div{
+  width:90%;
+  height: auto;
+  border: 1px solid gray;
+  padding:1% 2%;
+  margin:1% 0%;
+  background-color:white;
+  box-shadow: 0px 1px 1px teal;
+}
+
+#amazon_div  img{
+  width:80%;
+  height: auto;
+  padding:8%;
+  margin: 2%;
+  
+}
+
+
+
+#DATA_COMPANY_IMAGE_MAIN_DIV2{
+  width: 100%;
+  height: auto;
+  padding:1% 4%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+#amazon_div2{
+  width:90%;
+  height: auto;
+  border: 1px solid gray;
+  padding:2%;
+  margin:1% 0%;
+  background-color:white;
+  box-shadow: 0px 1px 1px teal;
+}
+
+
+#amazon_div2  img{
+  width:80%;
+  height: auto;
+  padding:8%;
+  margin: 2%;
+  
+}
+
+
+
+
+#DATA_COMPANY_IMAGE_MAIN_DIV3{
+  width: 100%;
+  height: auto;
+  padding:1% 14%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% 25%;
+}
+
+
+#amazon_div3{
+  width:90%;
+  height: auto;
+  border: 1px solid gray;
+  padding:2%;
+  margin:2% 0%;
+  background-color:white;
+  box-shadow: 0px 1px 1px teal;
+}
+
+
+#amazon_div3  img{
+  width:80%;
+  height: auto;
+  padding:8%;
+  margin: 2%;
+  
+}
+
+#STUDENT_MAIN_DIV{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#STUDENT_MAIN_DIV h1{
+  font-size: 50px;
+
+  padding: 2% 0%;
+  margin: 1% 0%;
+  color:rgb(15, 178, 178);
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+}
+
+
+#scrollbody_instadiv::-webkit-scrollbar{display: none;
+}
+#scrollbody::-webkit-scrollbar{display: none;
+}
+#scrollbody_instadiv{
+    width:100%;
+  height:100%;
+
+overflow: scroll;
+scroll-behavior: smooth;
+scroll-snap-align:center;
+
+}
+
+
+#scrollbody_instadiv{
+    background-color:rgb(240, 240, 240);
+   display: grid;
+   grid-template-columns: 300px 300px 300px 300px 300px 300px 300px 300px  300px 300px 300px 300px;
+   column-gap:1%;
+padding-top: 4%;
+padding-bottom: 4%;
+padding-right:2%;
+   overflow: scroll;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+
+  
+   
+}
+
+#smallinsta_div{
+    width: 300px;
+    height:auto;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+ border: 4px solid white;
+ box-shadow: 4px 4px  8px teal;
+    
+   
+}
+
+#smallinsta_div img{
+    width: 100%;
+    height:auto;
+   
+}
+
+#INSTA_MAIN_DIV{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 2%;
+    background-color:#E3E3E3;
+}
+
+
+#smallinsta_div h1{
+font-size: 24px;
+  padding: 2% 6%;
+font-family: "Roboto Slab", serif;
+font-weight: 500;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+
+
+#smallinsta_div  p{
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  padding: 2% 6%;
+  margin-bottom: 2%;
+}
+
+#FOOTER_MAIN_DIV{
+  width: 100%;
+  height: auto;
+  padding: 4%;
+  background-color:rgb(15, 178, 178);;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#footer_categries_div{
+  width: 95%;
+  height: auto;
+  padding: 2% 0%;
+  margin: 2%;
+}
+
+#footer_categries_div a{
+  color: white;
+  width:30%;
+  padding: 2% 0%;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  display: block;
+  transition: all 1s ease;
+
+}
+
+#footer_categries_div a:hover{
+  transform: translateY(-6px);
+  border-bottom: 1px solid white;
+
+
+}
+
+#reseriver_main_div{
+  text-align: center;
+  background-color:rgb(240, 240, 240);
+  width: 100%;
+  height: auto;
+}
+
+#reseriver_main_div p{
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  padding: 2% 0%;
+  color: teal;
+}
+
+#SELECT_STUDENT_MAIN_PAGES{
+  width: 100%;
+  height: auto;
+  padding: 2% 10%;
+
+}
+
+#SELECT_STUDENT_categries{
+  width: 100%;
+  height: auto;
+  padding:3% 2%;
+  background-color:rgb(246, 241, 241);
+ 
+  transform: translateY(60px);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+#select_box_div{
+  width: 95%;
+   background-color: white;
+  padding:2%;
+  box-shadow: 0px 0px 4px rgb(73, 206, 206);
+  border-radius: 4px;
+  height: auto;
+  transition: all 1s ease;
+  scale: 95%;
+  
+ 
+}
+#select_box_div p{
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  padding:3% 4%;
+  margin: 4% 0%;
+  
+}
+
+#select_box_div:hover{
+  transform: translateY(-22px);
+  scale: 100%;
+}
+
+#select_box_div h1{
+  font-size: 24px;
+font-family: "Roboto Slab", serif;
+font-weight: 500;
+padding:3% 4%;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 4% 0%;
+}
+
+#select_box_div img{
+  width:100%;
+  height:auto;
+
+
+}
+#COURSE_MAIN_DIV{
+  width: 100%;
+  height: auto;
+  padding: 1% 12%;
+ 
+}
+
+#course_categries_div{
+  width: 100%;
+  height: auto;
+  padding:2% 4%;
+
+
+ 
+}
+#course_readmore_div{
+  padding: 2%;
+  height:auto;
+  margin: 2% 0%;
+  box-shadow: 0px 0px 4px rgb(15, 178, 178);;;
+ }
+
+ #course_readmore_div p{
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  padding: 1% 0%;
+
+ }
+
+ #myh1{
+  font-size:26px;
+    font-family: "Roboto Slab", serif;
+font-weight: 500;
+padding: 1% 0%;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color:rgb(15, 178, 178);;
+ }
+
+#more {display: none;}
+
+
+
+    </style>
+
+
+
+<div id="LOGO_MAIN_DIV">
+
+
+  <div id="header_homepage_Logo_div">
+
+    <img src="https://www.data-entry-india.com/images/Data-Entry-India-Logo.png" alt="">
+
+
+  </div>
+
+
+  <div id="header_homepage_items_div">
+
+   <a href=""> <img src="data:image/jpeg;base64,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" alt=""></a>
+   <a href=""> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s" alt=""></a>
+   <a href=""> <img src="data:image/png;base64,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" alt=""></a>
+
+  </div>
+
+
+</div>
+
+
+<nav>
+
+    <div id="Logo_div">
+
+    </div>
+
+    <div id="logo_nav_text">
+   
+    <a href="">Home</a>
+
+    <a href="">About Us</a>
+
+    <a href="">Jobs Portal</a>
+
+    <a href="">Course</a>
+
+    <a href="">Contact Us</a>
+
+</div>
+
+
+
+<div id="logo_nav_btn_div">
+
+    <button id="Add_kart_btn"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FFFFFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
+
+
+
+    <button id="notification_btn"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FFFFFF"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg></button>
+
+   
+    <button id="Nav_login_btn"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FFFFFF"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></button>
+
+
+    
+      <!-- <div class="dropdown">
+      
+        <button class="dropbtn">  
+        
+        </button>
+
+
+        <div class="dropdown-content">
+            <a href=""><button id="Signup_btn">Sign Up</button></a>
+            <a href=""><button id="Login_btn">Login</button></a>
+        </div>
+        
+        
+        
+      </div>  -->
+
+
+
+
+</div>
+</nav>
+</head>
+<body>
+
+    <div id="HOME_MAIN_DIV">
+
+
+        <div id="home_categries_div">
+            <h1>Get Your Dream Job in 28 Days
+                21+9 Job Mantra - Placement Oriented Program</h1>
+
+
+            <p>Only legit jobs. No ads, scams, or junk to sift through. Our team spends 200+ hours/day verifying every job.
+
+                blue-tick
+                Unlimited Job Search Resources
+                Full access to all features including unlimited jobs, articles, and webinars to help you with your remote job search.</p>
+
+                <a href="Data -entry-apply=form.html"><button id="homepage_apply_btn">Apply</button></a>
+
+                <a href="Registation.html"><button id="homepage_signup_btn">Registration Now</button></a>
+
+        </div>
+
+
+        <div id="home_image_categries_div">
+            <img src="https://www.data-entry-india.com/images/about-pic2.png">
+        </div>
+    </div>
+
+    <div id="marque_div">
+
+      <marquee behavior="" direction="">Welcome to my website page Bihar Data Entry     Email : bihardataentry@gmail.com</marquee>
+    </div>
+
+
+
+
+
+
+
+<div id="STEP_MAIN_DIV">
+
+
+  <div id="step_categries_div">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsKarQayx2b4wV22ev2ybAAn-TiMEI8B5_e7e7z25HxBDSXyYkPzYA0Kfz9mBN77gXguY&usqp=CAU">
+
+    <h1>Step 1</h1>
+    <p>
+      21 Days Powerful Job Ready Training</p>
+
+  </div>
+
+
+
+  <div id="step_categries_div">
+    <img src="https://thumbs.dreamstime.com/b/live-stream-icon-linear-style-pictogram-isolated-futuristic-design-streaming-video-vector-outline-emblem-logo-238701612.jpg">
+    <h1>Step 2</h1>
+    <p>Give bihardataentry.com  & Communication test online</p>
+
+  </div>
+
+
+
+  <div id="step_categries_div">
+    <img src="https://thumbs.dreamstime.com/b/track-field-athlete-icon-track-field-athlete-icon-linear-style-sign-mobile-concept-web-design-sprinter-runner-man-141963005.jpg">
+    <h1>Step 3</h1>
+    <p>Get Guaranteed Interview Opportunity With a Company</p>
+
+  </div>
+
+
+
+  <div id="step_categries_div">
+
+    <img src="https://img.freepik.com/premium-vector/hand-book-logo-design-education-logo-with-hand-concept-vector-hand-book-logo-design_754537-701.jpg">
+    <h1>Step 4</h1>
+    <p>Crack interviews And Get Placements In Top Companies</p>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<div id="DATA_COMPANY_all_options">
+  <h1>Awesome Companies Hiring for Remote Jobs*</h1>
+</div>
+
+<div id="DATA_COMPANY_IMAGE_MAIN_DIV">
+
+  <marquee behavior="smooth" direction="left">
+
+   <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/942/primary">
+   </div>
+  </marquee>
+
+
+
+    <div id="amazon_div">
+      <img src="https://www.flexjobs.com/assets/jctblobcontent/6714/primary">
+     </div>
+
+
+
+
+  <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/13538/primary">
+   </div>
+</marquee>
+
+
+
+  <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/53191/primary">
+   </div>
+  </marquee>
+
+
+  
+    <div id="amazon_div">
+      <img src="https://www.flexjobs.com/assets/jctblobcontent/39940/primary">
+     </div>
+
+ 
+</div>
+
+
+
+<div id="DATA_COMPANY_IMAGE_MAIN_DIV2">
+
+
+
+   <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/3816/primary">
+   </div>
+
+
+
+
+    <div id="amazon_div">
+      <img src="https://www.flexjobs.com/assets/jctblobcontent/38862/primary">
+     </div>
+
+
+
+
+  <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/25894/primary">
+   </div>
+</marquee>
+
+
+
+  <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/3696/primary">
+   </div>
+  </marquee>
+
+
+  <marquee behavior="smooth" direction="right">
+    <div id="amazon_div">
+      <img src="https://www.flexjobs.com/assets/jctblobcontent/1392/primary">
+     </div>
+    </marquee>
+
+</div>
+
+
+
+
+<div id="DATA_COMPANY_IMAGE_MAIN_DIV2">
+
+
+
+  <div id="amazon_div">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4jDRftC66dZenW721maGrkTJx-K7Ysj-mw&s">
+  </div>
+
+
+
+
+   <div id="amazon_div">
+     <img src="data:image/png;base64,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">
+    </div>
+
+
+
+
+ <div id="amazon_div">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW5LW5SLtA-18zSPeVvOXBViEhwhX8XmU8yQ&s">
+  </div>
+</marquee>
+
+
+
+ <div id="amazon_div">
+   <img src="data:image/png;base64,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">
+  </div>
+ </marquee>
+
+
+ 
+   <div id="amazon_div">
+     <img src="https://iconmarathi.com/wp-content/uploads/2023/12/India-Post-Payments-Bank-Bharti-2024.png">
+    </div>
+
+
+</div>
+
+
+
+
+
+<div id="DATA_COMPANY_IMAGE_MAIN_DIV3">
+
+  <div id="amazon_div">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQ1kPmlfum7gjFaaUFmvFZebCSZaGxKWdAg&s">
+   </div>
+
+
+
+
+    <div id="amazon_div">
+      <img src="https://companieslogo.com/img/orig/meesho_BIG-61019c35.png?t=1720244494">
+     </div>
+
+
+
+
+  <div id="amazon_div">
+    <img src="https://i.pinimg.com/736x/6e/0c/ce/6e0cce3bf57f63bf582921286edd1dc7.jpg">
+   </div>
+</marquee>
+
+
+
+  <div id="amazon_div">
+    <img src="https://www.flexjobs.com/assets/jctblobcontent/5896/primary">
+   </div>
+  </marquee>
+
+
+</div>
+    
+
+
+<div id="ABOUT_MAIN_DIV">
+
+  <div id="about_categries_div">
+    <h1>Welcome to Data Entry Bihar</h1>
+
+    <p>Data Entry India is a Data Entry outsourcing company that is registered and certified by ISO 9001:2008 and licensed to provide Data Entry Services, Data Conversion Services, Data Processing Services, and other related services. Data Entry India is your best option for a data management one-stop-shop in India. By choosing to make use of our services at Data Entry India, you will no longer have to worry about the in-house troubles of processing and managing your organization’s data. All you have to do is outsource your data entry and back-office services to us, and you will have the optimal data management that your organization needs. <br><br>The professional services that we currently offer at Data Entry India include Data Entry, Data Conversion, Data Processing, Web Scraping, Mortgage Data Entry Service, Online Data Entry and Offline Data Entry Specialist, Excel Data Entry Representative, Data Extraction, Magento Product Upload Services, eCommerce Product Upload Services, Catalog Data Entry and back-office services. Each of these services is costumed to accommodate the needs of every one of our customers, so you have nothing to worry about when outsourcing your data entry to us. We deliver what you want when you want it.
+    </p>
+
+  </div>
+
+
+
+  <div id="about_categries_image_div">
+
+   
+    <img src=" https://www.flexjobs.com/blobcontent/flexjobs/images/bannerv1.svg" alt="">
+  </div>
+
+
+</div>
+
+
+<div id="ABOUT_MAIN_TEXT_DIV">
+  <p>
+    We deliver these services from our office in Ahmadabad, India, however, our services transcend geographical boundaries. We currently provide our services to clients from parts of the world such as the United States of America (USA), Canada, United Kingdom (UK), Spain, Australia, New Zealand, Switzerland, France, Netherlands, India, Israel, Japan, Hong Kong, and Singapore. Even more, these organizations are spread across various industries, such as Universities in the USA, UK, and Canada, Schools, other Educational institutions, Marketing firms, products Data Entry Services for E-commerce business, Magento, WooCommerce, Shopify, BigCommerce, media companies, medical research institutions, retail businesses, trade associations and many more.
+    
+    At Data Entry India, we boast of over 16 years of experience in providing affordable, flexible, and high-quality services to all our clients. Our process involves the deployment of the latest technology innovations that aid us in understanding and delivering the demand of our clients. With Data Entry India, all your worries about data processing are replaced with optimal effectiveness that would amplify the growth of your organization</p>
+
+</div>
+
+
+
+<div id="STUDENT_MAIN_DIV">
+
+  <h1>What Our Members Are Saying</h1>
+
+</div>
+
+
+
+
+
+<div id="scrollbody_instadiv">
+
+  
+  <div id="smallinsta_div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZSDNAymvobco5-jYYGISQLhmStN03L9T0A&s" alt="">
+
+      <h1>A.K SINGH</h1>
+
+  <p>I Joined many money making website, they are also cheat me. But right now I join wekicash.com, this company give me work and money also.</p>
+
+
+     
+      
+  </div>
+
+
+
+  
+  <div id="smallinsta_div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJ2Ed30bSsVKE3GJP-7FCgD9MDFJHmsugAg&s" alt="">
+
+
+      <h1>SUMAN KUAR</h1>
+      <p>I saw many website, they are not provide work. But here i received my work on time.Thanks for giving such a platform to earn money.</p>
+         
+          
+  </div>
+
+
+  
+  
+
+
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://www.shutterstock.com/image-photo/beautiful-businesswoman-working-on-project-260nw-1831260991.jpg" alt="">
+
+
+      <h1>AAYUSHI SINGH</h1>
+
+      <p>Most of the website are fake, just wastage my money. But This company really very helpful and also giving work.</p>
+  
+  </div>
+
+
+
+
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://t4.ftcdn.net/jpg/05/01/17/55/360_F_501175559_Na58U525sprxLIzG3QRENoyWlOoOXjlz.jpg" alt="">
+
+      <h1>BIKASH JHA</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+
+
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://media.istockphoto.com/id/1369508549/photo/happy-woman-in-cafe-talking-on-the-phone-with-earphones.jpg?s=612x612&w=0&k=20&c=LWgl8ssEn4RAKhw0v6SzAIBwxSdtPoaezvtSBMEyvKk=" alt="">
+
+      <h1>PUJA PANDEY</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKoIof7WykH_sCATOJgm4H6RIOd1GNbdNL3w&s" alt="">
+      <h1>MANISH SINHA</h1>
+     
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+      
+  </div>
+
+  <div id="smallinsta_div">
+      <img src="https://m.media-amazon.com/images/I/81oqLPG4lKL._AC_UF1000,1000_QL80_.jpg" alt="">
+
+      <h1>S.K CHAUDHARY</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+
+  <div id="smallinsta_div">
+      <img src="https://www.shutterstock.com/image-photo/happy-woman-wearing-jean-shirt-260nw-2347958841.jpg" alt="">
+
+      <h1>SANGITA ROY</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://media.istockphoto.com/id/1958000977/photo/excited-young-woman-listening-to-music-on-wireless-headphones-over-a-mobile-app-while-sitting.webp?b=1&s=170667a&w=0&k=20&c=1cbzy7HM5Wnl4rFi2sfPr2MenBAfvKJg-wRt63NkM8g=" alt="">
+
+      <h1>SALONI SINGH</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  
+     
+      
+  </div>
+
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://img.freepik.com/premium-photo/busy-man-wireless-headphones-use-smartphone-modern-communication-concept_474717-15283.jpg" alt="">
+
+      <h1>N .C CHAUDHARY</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+
+  
+  <div id="smallinsta_div">
+      <img src="https://media.istockphoto.com/id/1255302027/photo/happy-woman-in-bluetooth-headphones-relaxing-outside-the-home.jpg?s=612x612&w=0&k=20&c=arRkLWLd6HFkCunvNa9beQckIxy6ZCra2dpfvzCoxNs=" alt="">
+
+      <h1>MONI ROY</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+
+
+  
+
+
+
+
+
+
+  <div id="smallinsta_div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1RQEuzrT6qP7qnwhmhuv1k2iU7YVq2hXIg&s" alt="">
+
+      <h1>RAKESH GUPTA</h1>
+
+      <p>The best and fastest way to contact us is via the webform on below link, but we are also available on Live Chat below hours via the same link.  We do our very best to help you as fast as possible and we normally reply to all questions and emails the same day, but under weekends and holidays our reply could take up to 24h.  If you prefer email, you can also contact us</p>
+  
+  </div>
+</div>
+
+
+
+
+<div id="COURSE_MAIN_DIV">
+
+
+  <div id="course_categries_div">
+
+
+
+   
+    <div id="course_readmore_div">
+      
+      
+     
+      <h1 onclick="myFunction()" id="myh1">1. What Is The Qualification Required To Enroll In This Course?</h1>
+      <p>Erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta</p>
+
+
+    </div>
+
+
+    
+    <div id="course_readmore_div">
+      <h1 onclick="myFunction()" id="myh1">2. Can We Access This Course On Both Mobile and Laptop?</h1>
+      <p>Yes, you can access the course on both Mobile & Laptop.</p>
+      
+    </div>
+
+
+    <div id="course_readmore_div">
+      <h1 onclick="myFunction()" id="myh1">   3. What Is The Age Criteria Required To Enroll In This Course?</h1>
+      <p>Any Age People Can Enroll In This Program & Can Learn From Us, But For Guaranteed Interview’s & For Aasma Test, Age Must Be Below 35 Years. If Your age is More Than 35 Years, You are ELIGIBLE to learn from us, but you are not eligible for Guaranteed Interviews. But Yes With the help of this 21 Days Job Ready Program, you'll learn and be able to contact those company recruiters who are hiring above 35 years age candidates.</p>
+   
+      
+    </div>
+
+
+    <div id="course_readmore_div">
+
+      <h1 onclick="myFunction()" id="myh1">  4. Will I get Guaranteed Job After Completing this course?</h1>
+      <p>Our Boot Camp will provide guaranteed Interview opportunity to every eligible student, not guaranteed job. We will provide 1 guaranteed Interview opportunities to all candidates + if any candidate qualify Aasma Test, then he/she will get 2 more interview opportunities from our side. But he/she must have to attempt bihardataentry.com test. Eligibility For Guaranteed Interview Is - 12th Pass, Age Below 35 Years, Must Complete 21 Days Training & Must Give Aasma Communication Test.</p>
+    </div>
+
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+
+<div id="SELECT_STUDENT_MAIN_PAGES">
+
+
+
+  <div id="SELECT_STUDENT_categries">
+
+    <div id="select_box_div">
+      <img src="https://www.cheggindia.com/wp-content/uploads/2024/08/secret-websites-to-make-money-1024x543.png.webp" alt="">
+      <h1>New Jobs 8000+</h1>
+      <p>Personal Branding: 4 Best Strategies and Courses</p>
+    </div>
+
+
+    <div id="select_box_div">
+      <img src="https://www.cheggindia.com/wp-content/uploads/2024/08/secret-websites-to-make-money-1024x543.png.webp" alt="">
+      <h1>Full time</h1>
+      <p>Top 10 Secret Websites to Make Money Online</p>
+      
+    </div>
+
+
+    <div id="select_box_div">
+      <img src="https://www.cheggindia.com/wp-content/uploads/2024/08/stay-at-home-mom-jobs-1024x543.png.webp" alt="">
+      <h1>Online Jobs</h1>
+      <p>Best Stay at Home Mom Jobs: Flexible and Fulfilling</p>
+      
+    </div>
+
+
+    <div id="select_box_div">
+      <img src="https://www.cheggindia.com/wp-content/uploads/2024/08/online-jobs-no-experience-1024x543.png.webp" alt="">
+      <h1>Online Jobs</h1>
+      <p>Top Online Jobs with no experience for Students</p>
+      
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<div id="FOOTER_MAIN_DIV">
+
+  <div id="footer_categries_div">
+
+    <a href="">- Home</a>
+
+    <a href="">- About Us</a>
+
+    <a href="">- Jobs Portal</a>
+
+    <a href="">- Course</a>
+
+    <a href="">- Contact Us</a>
+
+  </div>
+
+
+
+  <div id="footer_categries_div">
+
+    <a href="">- Home</a>
+
+    <a href="">- About Us</a>
+
+    <a href="">- Jobs Portal</a>
+
+    <a href="">- Course</a>
+
+    <a href="">- Contact Us</a>
+
+  </div>
+
+
+
+
+  <div id="footer_categries_div">
+
+    <a href="">- Home</a>
+
+    <a href="">- About Us</a>
+
+    <a href="">- Jobs Portal</a>
+
+    <a href="">- Course</a>
+
+    <a href="">- Contact Us</a>
+
+
+
+  </div>
+
+
+
+
+  <div id="footer_categries_div">
+
+    <a href="">- Home</a>
+
+    <a href="">- About Us</a>
+
+    <a href="">- Jobs Portal</a>
+
+    <a href="">- Course</a>
+
+    <a href="">- Contact Us</a>
+
+  </div>
+
+
+
+</div>
+
+<div id="reseriver_main_div">
+  <p>© 2023-2024 Data Entry Bihar. All Rights Reserved.</p>
+</div>
+    
+</body>
+
+<script>
+   var rightclick = setInterval(scrollbody_instadiv_autoscroll,2000)
+var scrollnumber=0;
+function scrollbody_instadiv_autoscroll(){
+
+var bringbody = document.getElementById("scrollbody_instadiv");
+
+
+bringbody.scrollTo(scrollnumber,0);
+if(scrollnumber>3600){
+scrollnumber=-310;
+}
+
+scrollnumber+=310;
+
+console.log(scrollnumber);
+}
+
+
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = ""; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</html>
