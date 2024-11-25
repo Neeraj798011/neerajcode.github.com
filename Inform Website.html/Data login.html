@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data entry Login Form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+#first_nav_div{
+    width: 100%;
+    padding:1% 4%;
+    background-color: rgb(0, 0, 10);
+    display: grid;
+    grid-template-columns:70% 30%;
+   
+ 
+   
+}
+#social_div{
+    text-align:left;
+}
+
+#email_div{
+    display: grid;
+    grid-template-columns:50% 50%;
+ 
+}
+#email_categries{
+    display: grid;
+    grid-template-columns:12% 88%;
+   align-items: center;
+   
+}
+
+
+#email_div p{
+    color:white;
+    font-size: 15px;
+   padding:3% 5%;
+   font-family: 'Inter', sans-serif;
+}
+
+#email_div a{
+text-decoration: none;
+color:white;
+}
+
+#email_div img{
+    width:21px;
+   height: 21px;
+   border-radius:50%;
+ 
+ 
+}
+
+#social_div img{
+   width: 36px;
+   height: 36px;
+   border-radius:70%;
+   padding:5px;
+
+
+  
+}
+nav{
+    width: 100%;
+    padding:16px;
+    background-color:white;
+
+    box-shadow: 5px 5px 10px solid grey;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+
+   
+  
+   
+}
+
+#nava_div1{
+    text-align: right;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+    padding:3%;
+   
+
+}
+nav a:hover{
+    background-color: rgb(1, 218, 1);
+    color:white;
+    transition:1s all;
+  
+}
+
+
+
+#nava_div1 #nav_firstbutton{
+width: 150px;
+height:44px;
+background-color: white;
+border: 1px solid rgb(0, 226, 0);
+color:rgb(12, 145, 12);
+border-radius:20px;
+padding:2px;   
+font-size: 17px;
+font-family: 'Inter', sans-serif;
+cursor: pointer;
+}
+
+#nava_div1 #nav_firstbutton a{
+    font-weight:600;
+    color:rgb(0, 163, 0);
+  
+  
+}
+
+#nava_div1 #nav_firstbutton a:hover{
+    color:white;
+  
+   
+} 
+
+#nava_div1 #nav_firstbutton:hover{
+    background-color: rgb(1, 218, 1);
+  
+}
+
+
+#nava_div1 #nav_button2{
+width: 150px;
+height:44px;
+background-color: rgb(1, 218, 1);
+color:white;
+border:none;
+border-radius:20px;
+font-weight:bolder;
+padding:2px;   
+font-size: 17px;
+font-family: 'Inter', sans-serif;
+cursor: pointer;
+
+}
+
+#nava_div1 button a{
+color:white;
+
+}
+
+#close_btn{
+width: 28px;
+height:28px;
+border:none;
+cursor: pointer;
+display:none ;
+
+}
+
+#close_btn img{
+width: 100%;
+
+
+
+}
+
+#open_btn{
+width: 28px;
+height:28px;
+border:none;
+cursor: pointer;
+display:none; 
+
+}
+
+#open_btn img{
+width: 100%;
+
+
+}
+
+
+#media_nav_div{
+width: 100%;
+height:0px;
+overflow: hidden;
+border-radius: 4px;
+padding: 0% 2%;
+display:none;
+transition: 0.5s all;
+
+}
+
+#media_nav_div a{
+width: 100%;
+color:black;
+font-size:16px;
+font-family: 'Inter', sans-serif;
+text-decoration: none;
+padding: 2% 6%;
+border-radius: 4px;
+    margin: 2% 0%;
+border-left: 4px solid  rgb(5, 5, 141);;
+    border-right: 4px solid  rgb(5, 5, 141);;
+display: block;
+
+
+
+}
+#media_nav_div a:hover{
+width: 100%;
+color:white;
+background-color: rgb(5, 5, 141);
+transition: 1s;
+}
+        #Home_div{
+          width: 100%;
+            height:500px;
+            background-image: url("https://www.shutterstock.com/image-photo/satisfied-businessman-suit-going-home-600nw-2274516315.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+             border-radius: 4px;
+           
+        }
+
+        /* #Home_categries{
+            width: 400px;
+            height: 400px;
+            background-image: url("https://th.bing.com/th/id/OIP.4itjYDI2ECm51KVhBz5f5gHaGp?pid=ImgDet&w=176&h=158&c=7");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: rgba(0, 162, 168, 0.521);
+            border-radius: 8px;
+            border: 4px solid white;
+        } */
+      
+    
+
+  #Home_form h1{
+    font-size:35px;
+    color:green;
+    font-family: 'Inter', sans-serif;
+    margin-left: 6%;
+  
+  }
+
+  #input_radio{
+    width: 20px;
+    height: 20px;
+    accent-color:green;
+    cursor: pointer;
+   }
+
+
+  #Home_form #loginform{
+    background-color:white;
+width:300px;
+border: none;
+border-radius: 10px;
+display: grid;
+justify-items: center;
+position: absolute;
+padding:3% 2%;
+overflow: hidden;
+margin-top: 2%;
+margin-left:5%;
+  }
+
+  
+  table{
+    width: 100%;
+  }
+
+
+  table tr td input{
+width:100%;
+ border-radius:6px;
+ font-size: 16px;
+background-color: white;
+  padding:2%;
+  margin:6% 3%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-bottom:1px solid white;
+  cursor: pointer;
+  border: 1px solid green;
+ 
+  }
+
+  #button{
+    width: 100%;
+    height: 40px;
+    background-color:green;
+    color:white;
+    padding: 2%;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    margin-top:2%;
+    cursor: pointer;
+    border-radius:8px;
+    box-shadow: 20px 20px 40px solid grey;
+    
+  }
+  
+  
+
+  h4{
+    color:black;
+    font-size: 14px;
+    text-align: center;
+  }
+  h4 a{
+    color:green;
+    font-family: 'Inter', sans-serif;
+  }
+  a{
+    color:green;
+  }
+
+
+
+    h5{
+    cursor: pointer;
+    font-size: 15px;
+    color:green;
+    font-family: 'Inter', sans-serif;
+    font-weight:550;
+   
+  }
+
+  #footer_main_div{
+    width: 100%;
+    padding:4%;
+   
+    background-color: rgb(0, 207, 0);
+  }
+
+  #footer_main_div p{
+    color:white;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+  }
+
+
+  
+  @media(max-width:600px){
+
+#first_nav_div{
+ display: grid;
+grid-template-columns: 100%;
+padding:4% 16%;
+
+}
+
+#social_div{
+text-align:center;
+
+}
+
+
+nav{
+padding:8%;
+
+}
+
+nav a{
+display: none;
+
+
+}
+
+
+#nava_div1 #nav_firstbutton{
+display: none;
+}
+
+
+
+#nava_div1 #nav_button2{
+display: none;
+}
+
+
+
+#open_btn{
+display:block;
+position:absolute;
+right: 3%;
+background-color:white;
+} 
+
+#open_btn img{
+width: 100%;
+
+
+
+}  
+
+#close_btn{
+display:none;
+background-color: none;
+position:absolute;
+right: 3%;
+cursor: pointer;
+
+}
+
+#close_btn img{
+display:block;
+}
+
+#media_nav_div{
+display:block;
+}
+
+
+
+
+
+#Home_div{
+  width: 100%;
+  padding:2%;
+  height: 450px;
+  background-color:greenyellow;
+ 
+  
+}
+#Home_form{
+  margin-top:21%;
+  margin-left: 8%;
+  padding: 2%;
+}
+
+#footer_main_div{
+  margin-top:8%;
+  padding: 10%;
+
+}
+
+/* #loginform{
+  width:600px;
+  border: 6px solid red;
+  padding: 4%;
+} */
+
+
+
+  }
+  </style>
+
+<header>
+
+    <div id="first_nav_div">
+        <div id="social_div">
+    
+           <a href=""> <img src="https://th.bing.com/th/id/OIP.eUJJAmRd7nbdvoRAsw9OxwHaHa?w=204&h=204&c=7&r=0&o=5&pid=1.7"></a>
+
+
+           <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCaNBpRvk9AuUyU4BYZzspoMbCe7KiSUWS2Q&usqp=CAU"></a>
+
+
+
+           <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAAAD///9MTEz8/PyTk5PNzc339/c4ODjo6OhPT0+MjIzu7u6xsbERERGnp6fy8vIiIiLe3t6fn58+Pj5GRkaBgYF6enpfX1/R0dG6urqPj4/X19eZmZlmZmZZWVlkZGQuLi4xMTEZGRlycnK3t7fExMQnJycdHR0+1Fr0AAAFB0lEQVR4nO2daXeqMBCGQW8RcEG02kXa2lbo//+H17WKLJPKjFnO+3wup/Mck5BkksHzrwhHcTQdezYynkbxKLwW8sp62UB3mJ0ZZGGjYRDrjo6JOKg3nOgOjJFJjWES6Y6KlSi5NkwL3TExU6RlwwfdAQnwcGmY6o5GhPRsmLjWRA8Uya+hW4PMmehk6NJroszkYBjojkOQYG/oykymjnhnGOqOQpRwa5jpDkKUbGto/2qijYHvud1It83UG+kOQZiR5/JIuiP2XJ3PnIi8qe4QhJl6dm46qeO6HwAAACBB722ZbWaLt3fdgcjwcZG6GuZL3eGwsxxeJeb6bu0OPFUyjy6l47bMavycynfkDYK+H651x8ZCXQv9xYWdrOZfcD+q6g6vO0198MSz7gC78kQI+v5Md4gdae2EB+xOPy5pQf9Fd5CduJ7J1PKpO8oOfKgIWt0TR0qGNic/FMaZHXPdcd5MT03QX+gO9GbeFA3tPeyg8q7YkesO9GYyRUN7D1VtnDekZt32Gy4UDe3th+6Ppe+Khq+6A70dpYm371u8Q9y+g3Ei0R1mB9Re+VYfyuk73kjVZjUr3UF2I6ANe7pj7EZMCtr7uj/yQAgOv3RH2Blinf+oO77urFsFv3WHx8GgZWbjhOCW56Y+6EATPVK/UMztH2TOFC8Vv5Xl78EKn7PLQTUZWT1Va2K+mORpmuaTVyf1AAAAAAAAAACA+zL+Wc/n6+JHdxwyPC436anGU/j8Ejt2E3s+q+6vDx8Wwnd5e36/Hf9f/YMB9dz1ZY1lWtE70M+fZA0pGgzJ3GrZcNF6ZCAUvGZ1H8PKraqqo9j5x3sY/lAZvD0roVOsdzCkk7BHZA4myRtW8wWNpBJn5qUN100jaC2BQDZP2PBR4SRECf47j7KGc6XzOiXYO6Oo4effBflPYEka/iTU39TC/CtKGiq9Bmvg7YtyhvnrjYLM5yPkDIe3dMIDAed7Uc6wC5xH58005BxtDDVkvENuqiHfoVZTDX22NbGxhmzXOo01ZPsRzTXk+hHNNfSZduAMNmQ6YH43w2G6SsO/PWSTYf5d7He2p++bPyz6eTYY72DYL1cs+Fa8TsbVTOUNN5UqsZniszw3ysQN65papLj4ZznmKmzYrw/yS62YA8tiX9iwMT+o1Bk35hs2j4aPKs+zLDBEDdtq96jcI2eZuEka9ltT9Qrb/QFHASdJw/bKiyqFVThW+oKGAXHlZkUbcqQUBQ2pKYlCXpHj3pWgIbWELWhDjotJgobkKRK6mRpuSP7vpkuBthjSNSXp/LfZhnRJSboYgNmGdAHbfzCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEoYBhRP6Xhpug5HP0NWX6VhBHqehx1GsnWtc/SDzWi+j7n2vyfwuXiQYAAAAAAPfC9Ynd2KtUEnOMqefYl2oqRB5/IX6ziD3uIvWmMfLYatUaSugxVo02kYHvEfW2bCfbGrrdTMOtocBnTcwh9neGge4wBAn2hkJfUTKBiX8wZNlWNZH9ZvbeMOGor2geRfJryPo9DHM41M48ZhfoJIl9HD/Tc8qfpK411OJU/fQ3Q5S4Ndyci0lf5MBcemlMzlqXWb7AldlNfFm4vpzHDDP7VxqDrFwKvJKpDUdxNLVze2o8jeJRpdL5f2YjU4xtkVEnAAAAAElFTkSuQmCC"></a>
+           </div>
+
+    
+        <div id="email_div">
+            <div id="email_categries">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAAAD////8/PyYmJjx8fHh4eHt7e34+Ph+fn7p6emDg4MfHx+RkZGrq6vX19fm5uYxMTFubm6MjIzQ0NBNTU12dnZmZmagoKCzs7MYGBgODg67u7vExMRWVlZhYWFzc3M+Pj4oKCg3NzcZGRlCQkJPT08sLCwjIyPAwMBbW1vgFKdrAAAHfklEQVR4nOWd6XrqOgxFMSSElCFQ5rQM5UCH93/BS1ooEDJaW5XMXb/P1+ONHVuSJbnRKGK47vRaR56nk7fCf+gmHz3fXOE/Sw8ITS8wKcKZ9JiQvA3S+hL60sPCsfKyBBoz6EqPDMQoW9+RaC89NghPuQKNCVbSowPQKhB4xP39Zl4s0JiN9AiJlAo0piM9RhIVBBrzJD1KAv0qAo1x176pKNBdiZUFGtOTHqsVNQQa05IerQW1BLoosaZA9yQu6gp0TeJLfYFuSbQS6JJEiyXqlsSDrUB3JK6bDy9x9vgSp9YKnZG4sZfoio2aH34qxRVPY2r/Lboyi4SF6sosjh5/Fv8HEisFolyWuL67cHowiYStJkF/kPGZJlC/xNphDMckbjPvRB9H4rJF2WOuUHqnEXcijL4jU2kxGby1Qpg+Y5ojaT1pNq/2dkw2a2lJt3TB8oy6i3AGhcabSKu6hkOhae+kZV3BotBES2ldF3gUmrG0rgtMCs1CWtgvS5Atc4ca+y3OyWAjE2ylpZ1B2jM3vEorO4OzSNMcpKWd8MuHasmLtLQTELcwE19a2gk+hZ6S7Pcxm8KmkmzbTzaFRokBTogBO6KQHEJUr5BwbeiIwvXDKyRkmpSgZS8dcjkXpq3kPGy0uRRqsWn4DNNPaWVnLJP2ylET4C8pkbHGkxb2S4dJoZ4rYabjYiCt60LMIrCp5Lj/hiUWpWabSXhlEDiXFnUDg/+kJs72wwwuUFFM/5slWqCibfQEeKvxY2lBd2CDUW1FN2tnAKlCF0KNJfvIraY9lFaTxRCXjeGpFAh0EbUKhLmIOpdoAsiBUpWCccseIlDtEk1AnPnhh7SKIgDXM8pb1xT1a6mGNmM7DTmrRn9/JVq+gv8lPf5yKKaprypikceXtb7QCX2NRmxtmur/Ak9Y+4iBPn83G/vLblfKgLfWy7QtPfSq2GcOuVI/2rNW2HbkS9xaK3RmEu0d/UB66BUh3JQ6sp0O7RUGuj2nXwjxKEcMG0KGW6A5gHHhnRA21ZLxXALlqlRXvVoehB41ehKgCiFVl6ipkSnEuuXXEU91MPEMKbXGjc2GdEWjrP43G8peoyiRrQhSeN8Jy4aWW+PCoWgfzEiIXPCFaSlgempj8yFmLahrGZEB7U7fU5hMk4ZYQ6P9li2BWDarK+8yE2raggOvQxAnUUvpaAHUK2/9ruKSWqKv38uwD/Cf0FNqkQe5z4L6g5/kRCU01dvg5GRFXY2UMqAXB4d6s/h+oKd+h+/SGoqxzz75xf8nLaIYQKnQWLc/TLgS/kVZbVAaRDWUmkrgTGJEeyXILMbdj+ERvEFPPvYTxlSff9cbR2HbO9L2BwtwDiSkLtEnHRr7dPLyGGpJ7CGFJpH90T9c3I+gCc2KwJRehrY/eyc7AP+KPGcxDSU8OzM8N6nXByYNACybhKZN6KZgF/CAneBQdXv188IKDeMAd5H3D9WRr264v8TyD3AuNqwD0aDWwVjun+KaasPqS9s1TusqDjhMIsR4+6ZZNT4VV0vmhSV/AEtoK1qpVbOVYRKBLRfCKidj9XRsmERkMXv5vU2dfHOURGg3sMG2+D+r93OiJBIfZ7mleMOpu15QEqEtCYyf36muvsMGukCouH9XJu9rtKkpB0ncgxvzRZm2uN1SAdVCwDtkju8dY9tiAdAs4hsRzVOWqn1cCDSL+G5S3s3IdoSYCWYWuwz9Fa/rT0mbGWYWtxxtQKOzo0c8czESefrx+pvvP041DTFHP/l+P5tE44r8VzASsbbNhagDsO4xEtl6nSLASOTrUQ8AIvGD77EIABCJO7bGygggEg9cD9NAgLSwWKFfooMCmcW1aomQWZyxtXFHAJnFmepZhEiE3PGzgZGoehYhdxoj1d/iBiGR9IQ3O5D7xS/NEpuQW+KJagMOkqW853uVjk4AeQNmp9nTwPQa7Wr2F0Fdtykl/NyA6ugYXzUjAyq9pncG5QNUR7fW6xOj2pAp3lJR9Z5LtVFGXENApnA4HVxO8ZfSjxHYXXXH92QrBWThdazy8Md2I9HoFYP7rbxxPKxEA95RhvHdVjvwPXMOyk5/jq5AXNeodrD0PVppmkaewvl4rieaCokrZjBRM418NeU9HWejx1ipu1dxNvIW6o4ULFXuZynElyp/T6c3Wdc4+ItmQF+SEVVccVQhcp/j3/Vx3Mjcb/xpq6MnAY1/3Dlu+QyrgavI3z+GGncY5jHI3cdkHkOdoYNVzVFePqhY65g11pRLQoWZf9EXfMpgssDZOd/tFeKMhRrJduBcPoEOyNNpcF+UJTmDJ1YvgIkcnPeSOPWLKRB45L1Hncjg4tsOb3ZpHQITJn3SVcd1j5Pt1V+K1AhMWNlvO7cH+kWir67N7+jTbiZTru3h9FPpWaJXdGeL+tbOndH5k/Iaqe0Rt23VNHfuoxMbrTN4ofPSrhxmzfIbpuq7/B3Zdl6qHSKZWcBTNx4sauxGi0HZXHq6V2MV3qf9ccFBor9RcTU+Rr3+OPQyJlR9E99aLPfrzvx1PPAv+5Arz7zVpvu+O8ymz/N+raLf/wD/44IvgnY64AAAAABJRU5ErkJggg=="><p><a href="">7980114950</a></p>
+          </div>
+          
+<div id="email_categries">
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgyzJtXDIsVnEYZPUTLjkzuZXXJYY7HiyJiQ&usqp=CAU"><p><a href="">2023 gmail@.com</a></p>
+          </div>
+            
+        </div>
+    </div>
+   
+</header>
+</head>
+<body>
+    <nav>
+        <div id="logo_div">
+    
+        </div>
+        
+            <div id="nava_div1">
+    
+            <a href="HOME_DATA-PAGE.html.html">Home</a>
+    
+            <a href="About data.html">About</a>
+        
+            <a href="DataService.html">Service</a>
+        
+            <a href="contact_data.html">Contact</a>
+    
+            <button id="nav_firstbutton"><a href="Data login.html">Login</a></button>
+    
+            <button id="nav_button2"><a href="data form.html">Sign up </a></button>
+          
+            <button onclick="open_nav()" id="open_btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADGCAMAAADFYc2jAAAAb1BMVEUAAAD///80NDSoqKj5+fnX19e/v7+Ghobd3d1dXV3T09Pq6urOzs6Li4v29valpaU8PDwSEhI/Pz+2traAgIBXV1fExMR0dHQjIyNnZ2fj4+MICAhGRkZubm6SkpK7u7scHBybm5tMTEwhISF6eno4IUryAAADkUlEQVR4nO2dXXeqMBBFB/lWECqKFlusLf//N95E5AJC+yZnLc/spz6erRWSTDIRZ4jvNvmbvCxveeNGI2Hp//SuL2zec8q8Of0MnWs5son+ZofOtCR5NdZP0IGWphzqB+g0yxP0+j46CwK/09+ik2DY3vVjdBAM761+ic6BIrnpr9AxUHxYfdovX2Rt9N/RIXA0Rh+dAYkjlO/8jkoKdAQkpdToCEgyCdERkKTc+qH5AIgJ5YqOgOQqhFP9nsC8+oipqEd9ZzPobdAhcOyNPvGo17fz/W90ChS3+b6zRsdAsW7X+j7ROTA096VOj6K298jp/zp/hI6CoOqrPIQ/f39Y46Mb+1XjCq9HVeuIuxJ/X98vv9ChluJUzu3ucIoPdLAlOATzm1vsJoegPuSrlyU/1MFmJDzWp0P1mVF9ZlSfGdVnRvWZUX1mVJ8Z1WdG9ZlRfWZUnxnVZ0b1mVF9ZlSfGdVnRvWZUX1mVJ8Z1WdG9Zl51N/4gfuyBP7mL/3yiN5u/XyOl1/0ac5yuzP6CdFxrp/kUZ+siUM61qc6yWOJh/oHdJrliXt9yjPsYadP2rmobPVJmzXKudXfo3OguFp91i/f4Bl9msHeFNfo5+gQOL4dIf7ft+0KiVt1iqy5e3YV3A3ram79kF2ful1hKi46AhJX6O5lGJJwD3s8cajuJBnzYcb8RBfSPOJyT3i3drmD9tWX3lZ7PHQMFJ4uddrlXoLK5pS9ljm0yNVC9vivJwXuH3Sk5ThNCtwOz32E52J2d4fjBAR39BzLofFka1NSoDcgPY8i+XNrEx+qz4zqM6P6zKg+M6rPjOozo/rMqD4zqs+M6jOj+syoPjOqz4zqM6P6zKg+M6rPjOozo/rMqD4zqs/MwxXklzTeoS8Kfx67OL38fgV5QXGg83v+AvqApmHfqZzoe1SneWJvrF+hAy1NNdRfo9Msj9/r0333lqrT977QURCcOv1PdBIM+1aftntHdNOnbdl2sPqET/2OyOhTnl5vCY0+OgOQL0cidAYkGyHtXNFSSo2OgCTjbliXcuuT9+sLuX/7V7mgIyC5iI+OgCSiHvUZedbZvuVo9Gmn+yIJ9Xx/dVvuoG1SXrZrfYT92izxfamTtFvntlvnp3z3+32VJ0BnWZ5gWOOje/wl4wpvRfX623WbHPr6PtEtFdnc7o5tfUbnWoKfzHPm9O0rIGvyF97k8bZq3Ggk/A9VZnPaV6QKvQAAAABJRU5ErkJggg=="></button>
+        
+          
+    <button   onclick="close_nav()"id="close_btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADGCAMAAADFYc2jAAAAb1BMVEUAAAD///80NDSoqKj5+fnX19e/v7+Ghobd3d1dXV3T09Pq6urOzs6Li4v29valpaU8PDwSEhI/Pz+2traAgIBXV1fExMR0dHQjIyNnZ2fj4+MICAhGRkZubm6SkpK7u7scHBybm5tMTEwhISF6eno4IUryAAADkUlEQVR4nO2dXXeqMBBFB/lWECqKFlusLf//N95E5AJC+yZnLc/spz6erRWSTDIRZ4jvNvmbvCxveeNGI2Hp//SuL2zec8q8Of0MnWs5son+ZofOtCR5NdZP0IGWphzqB+g0yxP0+j46CwK/09+ik2DY3vVjdBAM761+ic6BIrnpr9AxUHxYfdovX2Rt9N/RIXA0Rh+dAYkjlO/8jkoKdAQkpdToCEgyCdERkKTc+qH5AIgJ5YqOgOQqhFP9nsC8+oipqEd9ZzPobdAhcOyNPvGo17fz/W90ChS3+b6zRsdAsW7X+j7ROTA096VOj6K298jp/zp/hI6CoOqrPIQ/f39Y46Mb+1XjCq9HVeuIuxJ/X98vv9ChluJUzu3ucIoPdLAlOATzm1vsJoegPuSrlyU/1MFmJDzWp0P1mVF9ZlSfGdVnRvWZUX1mVJ8Z1WdG9ZlRfWZUnxnVZ0b1mVF9ZlSfGdVnRvWZUX1mVJ8Z1WdG9Zl51N/4gfuyBP7mL/3yiN5u/XyOl1/0ac5yuzP6CdFxrp/kUZ+siUM61qc6yWOJh/oHdJrliXt9yjPsYadP2rmobPVJmzXKudXfo3OguFp91i/f4Bl9msHeFNfo5+gQOL4dIf7ft+0KiVt1iqy5e3YV3A3ram79kF2ful1hKi46AhJX6O5lGJJwD3s8cajuJBnzYcb8RBfSPOJyT3i3drmD9tWX3lZ7PHQMFJ4uddrlXoLK5pS9ljm0yNVC9vivJwXuH3Sk5ThNCtwOz32E52J2d4fjBAR39BzLofFka1NSoDcgPY8i+XNrEx+qz4zqM6P6zKg+M6rPjOozo/rMqD4zqs+M6jOj+syoPjOqz4zqM6P6zKg+M6rPjOozo/rMqD4zqs/MwxXklzTeoS8Kfx67OL38fgV5QXGg83v+AvqApmHfqZzoe1SneWJvrF+hAy1NNdRfo9Msj9/r0333lqrT977QURCcOv1PdBIM+1aftntHdNOnbdl2sPqET/2OyOhTnl5vCY0+OgOQL0cidAYkGyHtXNFSSo2OgCTjbliXcuuT9+sLuX/7V7mgIyC5iI+OgCSiHvUZedbZvuVo9Gmn+yIJ9Xx/dVvuoG1SXrZrfYT92izxfamTtFvntlvnp3z3+32VJ0BnWZ5gWOOje/wl4wpvRfX623WbHPr6PtEtFdnc7o5tfUbnWoKfzHPm9O0rIGvyF97k8bZq3Ggk/A9VZnPaV6QKvQAAAABJRU5ErkJggg=="></button>
+</div>
+</div>
+        </nav>
+
+        <div id="media_nav_div">
+            <a href="HOME_DATA-PAGE.html.html">Home</a>
+          
+    
+            <a href="About data.html">About</a>
+           
+
+            <a href="DataService.html">Service</a>
+         
+            <a href="contact_data.html">Contact</a>
+           
+            <a href="data form.html">Register</a>
+           
+            <a href="Data login.html">Login</a>
+           
+
+        </div>
+
+
+        <div id="Home_div">
+
+       
+           
+
+       <div id="Home_form">
+        <form id="loginform">
+              
+          <h1>   <input type="radio" id="input_radio"> Log in</h1>
+           <table>
+               
+               
+              
+               <tr>
+                   <td>
+                       <input type="Email"placeholder="Enter your Email @.com*"required>
+                   </td>
+               </tr>
+             
+               <tr>
+                   <td>
+                       <input type="password"placeholder="Enter Your Password*"required>
+                   </td>
+               </tr>
+               <tr>
+                <td>
+                  
+              <a href=""><h5>forget Password</h5></a>
+              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" id="button">
+              </td>
+            </tr>
+
+          
+           </table>
+        
+           
+          
+           <h4>Already have an account  <a href="">Registration</a></h4>
+       </form>
+        </div>
+
+
+        </div>
+
+        <div id="footer_main_div">
+          <p>Copyrights © 2023 @gmail.com</p>
+        </div>
+
+    
+</body>
+<script>
+function open_nav(){
+    document.querySelector("#media_nav_div").style.height='280px';
+    document.querySelector("#open_btn").style.display="none";  
+    document.querySelector("#close_btn").style.display="block";
+ 
+ }
+
+ function close_nav(){
+    document.querySelector(" #media_nav_div").style.height='-0px';
+      document.querySelector("#close_btn").style.display="none";
+      document.querySelector("#open_btn").style.display="block";  
+
+
+}
+function close_nav1(){
+    document.querySelector(" #media_div").style.left='-500px';
+      document.querySelector("cut_button").style.display="none";
+
+}
+function open_nav1(){
+    document.querySelector("#media_div").style.left='0px';
+    document.querySelector("nav_threeline_btn").style.display="block";  
+    document.querySelector("cut_button").style.display="block";
+ 
+ }
+</script>
+</html>

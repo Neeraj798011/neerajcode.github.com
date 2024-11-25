@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DELHI METRO</title>
+    
+
+    <style>
+
+       
+       @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+       @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        #LOGO_MAIN_DIV{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+
+        #logo_categries{
+            padding:1%;
+        }
+        #logo_categries img{
+            padding:1%;
+        }
+       
+        nav{
+            width: 100%;
+            padding:1.5% 1%;
+           
+            text-align: right;
+            background-color: chocolate;
+
+        }
+
+        nav a{
+            text-decoration: none;
+            font-size: 14px;
+            padding:0.8% 1%;
+            color: white;
+            border-right: 1px solid white;
+            font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+  border-bottom-right-radius:4px ;
+ 
+ 
+        }
+
+        #OPEN_MOBILE_NAV{
+            background-color: chocolate;
+            border: none;
+            cursor: pointer;
+           display: none;
+           position:absolute;
+           right:4%;
+           padding:2%;
+        }
+
+        #close_MOBILE_NAV{
+            background-color: chocolate;
+            border: none;
+            cursor: pointer;
+            position:absolute;
+            right:4%;
+         /* position:fixed; */
+         padding:2%;
+         display: none;
+        }
+
+      
+
+
+        
+        .fa-facebook {
+            background-color: chocolate;
+  color: white;
+}
+
+.fa-twitter {
+    background-color: chocolate;
+  color: white;
+}
+
+.fa-google {
+    background-color: chocolate;
+  color: white;
+}
+
+.fa-linkedin {
+    background-color: chocolate;
+  color: white;
+}
+
+.fa-youtube {
+    background-color: chocolate;
+  color: white;
+}
+
+.fa-instagram {
+    background-color: chocolate;
+  color: white;
+}
+
+.fa-pinterest {
+    background-color: chocolate;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa {
+  padding: 12px;
+  font-size:22px;
+  width:40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 2px;
+  display: block;
+}
+
+#SOCIAL_MEADIA{
+    width: auto;
+    height:auto;
+    padding: 2%;
+    
+   margin:1% 0%;
+    
+   position: fixed;
+   margin-left: -1.5%;
+   
+  
+   border-radius: 4px;
+   transform: translateY(-400px);
+}
+
+
+
+#HOME_MAIN_DIV{
+    width: 100%;
+    height:auto;
+    padding:1% 2%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+   
+}
+#home_categries{
+    width: 100%;
+    height:100%;
+    padding:1% 5%;
+    margin-top:4%;
+  
+}
+
+#home_categries h1{
+    color: chocolate;
+    font-size: 34px;
+    padding: 2%;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+
+}
+
+#home_categries p{
+    font-size: 16px;
+    color: black;
+    padding: 1% 2%;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+#home_categries span{
+    color: chocolate;
+    font-weight:700;
+}
+
+#home_categries button{
+    width:30%;
+    background-color: chocolate;
+    border: navajowhite;
+    padding:2% 4%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:600;
+  font-style: normal;
+    margin:3% 2%;
+    transition: all 0.5s ease;
+}
+
+#home_categries button:hover{
+    background-color: white;
+    color: chocolate;
+    border: none;
+    border-left: 2px solid chocolate;
+    border-right: 2px solid chocolate;
+    border-radius: 4px;
+}
+
+#home_categries1{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+
+#home_categries1 img{
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+
+#IMPORTANT_INFO_DIV{
+
+    width: 100%;
+    height: auto;
+    padding:1% 5.5%;
+   
+   
+   
+}
+
+
+
+#important_categries{
+    display: flex;
+justify-items: center;
+justify-content: center;
+    border: 1px solid chocolate;
+}
+
+
+#important_categries h1{
+    width:26%;
+ 
+    background-color: chocolate;
+    color: white;
+    padding:1%;
+    font-size:18px;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+#important_categries a{
+    color:chocolate;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+justify-items: center;
+  padding: 2% 0%;
+  font-style: normal;
+ 
+}
+
+#ABOUT_MAIN_BOX{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 4% 6%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+#about_box_categries1{
+    width:96%;
+    height:auto;
+    background-color: chocolate;
+    box-shadow: 2px 2px 2px gray;
+    padding:10% 6%;
+    text-align: center;
+    transition: all 0.2s ease;
+    scale: 95%;
+}
+
+#about_box_categries1:hover{
+    scale: 100%;
+
+}
+
+
+#about_box_categries2:hover{
+    scale: 100%;
+
+}
+
+
+#about_box_categries3:hover{
+    scale: 100%;
+
+}
+
+
+#about_box_categries4:hover{
+    scale: 100%;
+
+}
+
+
+#about_box_categries5:hover{
+    scale: 100%;
+
+}
+
+
+
+
+
+#about_box_categries2{
+    width:96%;
+    height:auto;
+    background-color:red;
+    box-shadow: 2px 2px 2px gray;
+    padding:10% 6%;
+    text-align: center;
+    transition: all 0.2s ease;
+    scale: 95%;
+}
+
+
+
+#about_box_categries3{
+    width:96%;
+    height:auto;
+    background: #430297;
+    box-shadow: 2px 2px 2px gray;
+    padding:10% 6%;
+    text-align: center;
+    transition: all 0.2s ease;
+    scale: 95%;
+}
+
+
+
+#about_box_categries4{
+    width:96%;
+    height:auto;
+    background: #f40083;
+    box-shadow: 2px 2px 2px gray;
+    padding:10% 6%;
+    text-align: center;
+    transition: all 0.2s ease;
+    scale: 95%;
+}
+
+
+
+
+#about_box_categries5{
+    width:96%;
+    height:auto;
+    background: #dd4b39;
+    box-shadow: 2px 2px 2px gray;
+    padding:10% 6%;
+    text-align: center;
+    transition: all 0.2s ease;
+    scale: 95%;
+}
+
+#about_box_categries1 img{
+    width: 40%;
+    height: auto;
+    padding: 6% 0%;
+
+}
+
+#about_box_categries1 a{
+    text-decoration: none;
+}
+
+
+#about_box_categries1 h1{
+    padding:6% 2%;
+    color: white;
+    font-size:28px;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+
+#about_box_categries1 p{
+    padding: 6% 2%;
+    color: white;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+
+
+
+
+#about_box_categries2 img{
+    width: 40%;
+    height: auto;
+    padding: 6% 0%;
+
+}
+
+#about_box_categries2 a{
+    text-decoration: none;
+}
+
+
+#about_box_categries2 h1{
+    padding:6% 2%;
+    color: white;
+    font-size:28px;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+
+#about_box_categries2 p{
+    padding: 6% 2%;
+    color: white;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+
+#about_box_categries3 img{
+    width: 40%;
+    height: auto;
+    padding: 6% 0%;
+
+}
+
+#about_box_categries3 a{
+    text-decoration: none;
+}
+
+
+#about_box_categries3 h1{
+    padding:6% 2%;
+    color: white;
+    font-size:28px;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+
+#about_box_categries3 p{
+    padding: 6% 2%;
+    color: white;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+#about_box_categries4 img{
+    width: 40%;
+    height: auto;
+    padding: 6% 0%;
+
+}
+
+#about_box_categries4 a{
+    text-decoration: none;
+}
+
+
+#about_box_categries4 h1{
+    padding:6% 2%;
+    color: white;
+    font-size:28px;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+
+#about_box_categries4 p{
+    padding: 6% 2%;
+    color: white;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+
+#about_box_categries5 img{
+    width: 40%;
+    height: auto;
+    padding: 6% 0%;
+
+}
+
+#about_box_categries5 a{
+    text-decoration: none;
+}
+
+
+#about_box_categries5 h1{
+    padding:6% 2%;
+    color: white;
+    font-size:28px;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+
+#about_box_categries5 p{
+    padding: 6% 2%;
+    color: white;
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+#COUNTER_MAIN_DIV{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#counter_categries{
+    width: 95%;
+    height: auto;
+
+}
+
+#counter_categries h2{
+font-size:40px;
+color: white;
+padding: 1% 0%;
+font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+} 
+
+#counter_categries h1{
+    color: white;
+    font-size: 35px;
+    padding: 1% 0%;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+
+}
+
+#counter_categries p{
+    color: white;
+    padding: 1% 0%;
+    font-size: 22px;
+    font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+#ABOUT_MAIN_DIV{
+    width: 100%;
+    height: auto;
+    padding: 4% 6%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+#about_box_categries{
+    width: 90%;
+    background-color: #e9d8d5;
+    height: auto;
+    border-bottom: 6px solid chocolate;
+  
+   border-bottom-left-radius:10%;
+   
+    /* box-shadow: 2px 2px 2px grey; */
+
+    transition: all 1s ease;
+    scale: 95%;
+   
+
+}
+
+
+#about_box_categries:hover{
+    scale: 100%;
+    transform: translateY(-4px);
+}
+
+
+#about_box_categries img{
+    width: 100%;
+    height:auto;
+}
+
+#about_box_categries h1{
+    font-size: 26px;
+    padding:2% 6%;
+    color: chocolate;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+
+#about_box_categries p{
+    color: black;
+    padding:2% 6%;
+    font-family: "Hind", sans-serif;
+  font-weight:500;
+  font-style: normal;
+
+  font-size: 16px;
+  justify-items: center;
+
+}
+
+#about_box_categries a{
+    font-size:18px;
+    padding:4% 6%;
+    color: chocolate;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  text-decoration: none;
+ 
+}
+
+#about_box_categries a:hover{
+   color: #f40083;
+}
+
+
+#IMAGE_MAIN_DIV{
+    width: 100%;
+    height: auto;
+    padding: 4% 6%;
+
+}
+#IMAGE_MAIN_DIV img{
+width: 100%;
+height: auto;
+}
+
+#FOOTER_MAIN_DIV{
+    width: 100%;
+    height: auto;
+    background-color: chocolate;
+    padding:2% 4%;
+
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+}
+
+#footer_categries{
+    width: 95%;
+    height: auto;
+    padding: 2% 0%;
+    border-bottom: 2px solid white;
+
+}
+
+
+#footer_categries h1{
+    color: white;
+    font-size: 24px;
+    padding: 2% 0%;
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#footer_categries a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 2% 0%;
+    color: white;
+    display: block;
+    font-family: "Hind", sans-serif;
+  font-weight:500;
+  font-style: normal;
+  transition: all 0.2s ease;
+  scale: 98%;
+
+}
+
+#footer_categries a:hover{
+    width: auto;
+    color:yellow;
+    transform: translateY(-4px);
+    scale: 100%;
+}
+
+#footer_categries p{
+    font-size: 16px;
+    padding: 2% 0%;
+    color: white;
+    display: block;
+    font-family: "Hind", sans-serif;
+  font-weight:500;
+  font-style: normal;
+}
+
+#MOBILE_SOCIAL_DIV{
+    width: 100%;
+    display: flex;
+    background-color: chocolate;
+    padding: 4%;
+    display: none;
+}
+
+#MOBILE_NAV_DIV{
+    display:none;
+}
+
+@media(max-width:700px){
+
+    #LOGO_MAIN_DIV{
+display: block;
+       
+    }
+
+    nav{
+        padding: 6% 4%;
+        text-align: right;
+       
+    }
+    nav a{
+display: none;
+    }
+
+    #MOBILE_NAV_DIV{
+        width:70%;
+        height:0px;
+        background-color: chocolate;
+        display: block;
+        /* padding: 2% 0%; */
+        margin: 1% 14%;
+        z-index: 2;
+        position:absolute;
+        overflow: hidden;  
+        transition: 0.5s all ease;
+      
+    }
+
+    #MOBILE_NAV_DIV a{
+        font-size: 16px;
+        border-bottom: 1px solid white;
+        padding:3% 4%;
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-family: "Hind", sans-serif;
+  font-weight:400;
+  font-style: normal;
+  transition: all 0.5s ease;
+    }
+
+    #MOBILE_NAV_DIV a:hover{
+        background-color: white;
+        color: chocolate;
+        font-weight: 600;
+    }
+
+
+    
+    #OPEN_MOBILE_NAV{
+        display: block;
+        margin-top: -5%;
+      
+       
+    }
+
+    #close_MOBILE_NAV{
+        display: block;
+        margin-top: -5%;
+    }
+
+    #SOCIAL_MEADIA{
+        display: none;
+    }
+
+    #HOME_MAIN_DIV{
+        grid-template-columns: 100%;
+    }
+
+
+    #home_categries1{
+  width: 100%;
+  height: auto;
+  grid-column-start:1;
+      grid-column-end:2;
+      grid-row-end: 2;
+      grid-row-start:1;
+      padding: 2%;
+
+    
+      /* margin-top:12%; */
+      /* border: 4px solid red; */
+      
+}
+
+#home_categries{
+    padding: 2%;
+}
+
+#home_categries button{
+    width:auto;
+}
+
+
+#IMPORTANT_INFO_DIV{
+    width: 100%;
+    padding: 2%;
+}
+
+#important_categries{
+    width: 100%;
+ 
+}
+
+#IMPORTANT_INFO_DIV h1{
+ width:60%;
+    font-size: 14px;
+    padding:3%;
+ }
+
+
+#ABOUT_MAIN_BOX{
+    grid-template-columns: 50% 50%;
+    padding: 4% 2%;
+}
+
+#COUNTER_MAIN_DIV{
+    grid-template-columns: 50% 50%;
+    padding: 4% 2%;
+    margin: 12% 0%;
+}
+#counter_categries{
+    padding:4% 2%;
+}
+
+#counter_categries h1{
+    font-size: 28px;
+}
+
+#counter_categries h2{
+    font-size: 28px;
+}
+
+#counter_categries p{
+    font-size: 16px;
+}
+
+#ABOUT_MAIN_DIV{
+    grid-template-columns: 100%;
+}
+
+#about_box_categries{
+    width:100%;
+    
+}
+
+#IMAGE_MAIN_DIV{
+    width: 100%;
+    padding:4% 2%;
+}
+
+#IMAGE_MAIN_DIV img{
+    width: 100%;
+    height:100%;
+}
+
+
+#FOOTER_MAIN_DIV{
+    grid-template-columns: 100%;
+    padding: 2% 4%;
+    border-bottom: 2px solid white;
+}
+
+#footer_categries{
+    width: 100%;
+    border: none;
+}
+
+#MOBILE_SOCIAL_DIV{
+    display: block;
+    display: flex;
+}
+}
+
+
+    </style>
+
+    
+<div id="LOGO_MAIN_DIV">
+
+
+    <div id="logo_categries">
+
+        <img src="https://www.delhimetrorail.com/static/media/logo-svg.7c5bc8e0.svg" alt="">
+
+    </div>
+
+
+    <div id="logo_categries">
+        
+    </div>
+
+</div>
+
+<nav>
+
+<a href="">HOME</a>
+
+
+<a href="">ABOUT US</a>
+
+
+
+<a href="">PROJECTS</a>
+
+
+<a href="">TENDERS</a>
+
+
+<a href="">RESOURCES</a>
+
+
+<a href="">AFFILIATES</a>
+
+
+<a href="">VIGILANCE</a>
+
+
+<a href="">RTI ONLINE</a>
+
+
+
+<a href="">RETIRED EMPLOYEES</a>
+
+<a href="">CONTACT US</a>
+
+<button id="OPEN_MOBILE_NAV"onclick="open_nav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+
+<button id="close_MOBILE_NAV"onclick="close_nav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+
+
+</nav>
+</head>
+<body>
+
+<div id="MOBILE_NAV_DIV">
+    <a href="">HOME</a>
+
+
+<a href="">ABOUT US</a>
+
+
+
+<a href="">PROJECTS</a>
+
+
+<a href="">TENDERS</a>
+
+
+<a href="">RESOURCES</a>
+
+
+<a href="">AFFILIATES</a>
+
+
+<a href="">VIGILANCE</a>
+
+
+<a href="">RTI ONLINE</a>
+
+
+
+<a href="">RETIRED EMPLOYEES</a>
+
+<a href="">CONTACT US</a>
+
+</div>
+
+    <div id="HOME_MAIN_DIV">
+
+
+        <div id="home_categries">
+
+            <h1>DELHI METRO RAIL CORPORATION</h1>
+
+            <p><span>Delhi Metro</span>is the largest and Busiest rapid transit System in India connecting the country's capital region whith Satellite cities The metro system is oprated by <span>Delhi Metro Rail Corporation (DMRC) ,</span>a public sector company established bt the Goverment of India and the Goverment of Delhi in <span>may 1995..</span></p>
+
+           <a href=""><button>LEARN MORE</button></a>
+        </div>
+
+
+
+        <div id="home_categries1">
+
+            <img src="https://backend.delhimetrorail.com/media/original_images/metr-train-homepage_byhmsIT.png" alt="">
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+<div id="SOCIAL_MEADIA">
+    <a href="" class="fa fa-facebook"></a>
+
+    <a href="#" class="fa fa-twitter"></a>
+
+   <a href="#" class="fa fa-linkedin"></a>
+
+   <a href="#" class="fa fa-youtube"></a>
+
+    <a href="#" class="fa fa-instagram"></a>
+
+</div>
+
+    
+
+<div id="IMPORTANT_INFO_DIV">
+
+
+   <div id="important_categries">
+
+    <h1>Important Information : </h1>
+
+    
+    <marquee behavior="" direction=""><a href="">O STATIONSDelhi Metro Introduces Airport Check-In Services for International Flights at Key StationsDELHI METRO TO CONDUCT 10th ‘CUSTOMER SATISFACTION SURVEY’ FROM 15th JULY (MONDAY) TO 14th AUGUST (WEDNESDAY) 2024EXHIBITION COMMEMORATING KARGIL VIJAY DIWAS OPENS FOR PUBLIC AT RAJIV CHOWK METRO STATIONDMRC Launches Digital QR Ticketing for Commuters through Amazon Pay, Simplifies Daily CommutesIRCTC & DMRC QR Code Ticketing under `One India - One Ticket’ InitiativeDMRC AND RVNL SIGN MOU TO WORK AS PROJECT SERVICE PROVIDER FOR DESIGN, CONSTRUCTION AND CONSULTANCY SERVICES IN INDIA & ABROADSH. RAJIV DHANKHER TAKES CHARGE AS DIRECTOR (PROJECTS & PLANNING), DMRCShow Cause NoticeList of Shops Available On Walk-in Basis
+        003-briefing.819e8c25.png
+        TENDERS
+        View All Tenders
+        
+        briefcase.png
+        CAREER
+        About Career
+        
+        001-influencer.20cd73b0.png
+        RTI ONLINE
+        View Right To Information DMRC
+        
+        </a></marquee>
+
+   </div>
+</div>
+
+
+<div id="ABOUT_MAIN_BOX">
+
+    <div id="about_box_categries1">
+       
+
+        <a href="">
+            <img src="https://backend.delhimetrorail.com/media/original_images/003-briefing.819e8c25.png" alt="">
+
+            <h1>TENDERS</h1>
+
+            <p>View All Tenders</p>
+        </a>
+
+    </div>
+
+
+
+    <div id="about_box_categries2">
+
+        <a href="">
+            <img src="https://backend.delhimetrorail.com/media/original_images/003-briefing.819e8c25.png" alt="">
+
+            <h1>TENDERS</h1>
+
+            <p>View All Tenders</p>
+        </a>
+        
+    </div>
+
+
+
+    <div id="about_box_categries3">
+
+        <a href="">
+            <img src="https://backend.delhimetrorail.com/media/original_images/003-briefing.819e8c25.png" alt="">
+
+            <h1>TENDERS</h1>
+
+            <p>View All Tenders</p>
+        </a>
+        
+    </div>
+
+
+
+    <div id="about_box_categries4">
+
+        <a href="">
+            <img src="https://backend.delhimetrorail.com/media/original_images/003-briefing.819e8c25.png" alt="">
+
+            <h1>TENDERS</h1>
+
+            <p>View All Tenders</p>
+        </a>
+        
+    </div>
+
+
+    <div id="about_box_categries5">
+
+
+        <a href="">
+            <img src="https://backend.delhimetrorail.com/media/original_images/003-briefing.819e8c25.png" alt="">
+
+            <h1>TENDERS</h1>
+
+            <p>View All Tenders</p>
+        </a>
+        
+    </div>
+</div>
+
+
+
+<div id="COUNTER_MAIN_DIV">
+
+
+    <div id="counter_categries">
+        <h2>DELHI METRO STATISTICS</h2>
+
+    </div>
+
+
+
+    <div id="counter_categries">
+        <h1>393 KM</h1>
+        <p>Total Network Length*</p>
+
+    </div>
+
+
+    <div id="counter_categries">
+        <h1>12</h1>
+        <p>Total No of Lines*</p>
+    </div>
+
+
+    <div id="counter_categries">
+        <h1>288</h1>
+        <p>Total No of Stations*</p>
+    </div>
+
+
+</div>
+
+
+
+<div id="ABOUT_MAIN_DIV">
+
+
+
+    <div id="about_box_categries">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqlDmhBeZ1KMpXTfOW7fwdjtS_MP4RXTtjoxxc7N9XDHytDFCs" alt="">
+
+        <h1>Delhi Metro Rail Academy</h1>
+
+        <p>Delhi Metro Rail Academy is a premier academy in India for training in Metro Rail systems including project planning & implementation as well as operations and maintenance.  it has trained more than 35000 persons from Delhi Metro as well as other metros across the country..</p>
+
+        <a href="">Click here to know more</a>
+
+    </div>
+
+
+
+    <div id="about_box_categries">
+
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2um6Y2WEoHE0qT0ZIbdUmVAhTfjYTOrKapW4qySKVD9EdZwzS" alt="">
+
+        <h1>I-Metro</h1>
+        <p>I-METRO is a forum for exchange of ideas, pooling of knowledge and sharing of experience, best practices, innovations among the Indian Metro Rail companies to nurture excellence in performance.</p>
+
+        <a href="">Click here to know more</a>
+        
+    </div>
+
+
+
+    <div id="about_box_categries">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4Yf9BUJYvGb5NQP5FtpFEslYY-ipDWr1mv-mEgm4lbD-adpf" alt="">
+        <h1>Properties on Lease</h1>
+        <p>DMRC routinely leases prominent Station Areas and Shops in its vast Network of over 250 Stations for the operation of Food Kiosks, Restaurants, Shopping etc. The details of available Properties, Policies and other related information is available in this section..</p>
+        
+
+        <a href="">Click here to know more</a>
+        <br>
+        <br>
+
+       
+
+        <br>
+        <br>
+    </div>
+</div>
+
+
+
+
+<div id="IMAGE_MAIN_DIV">
+
+   <a href=""> <img src="https://backend.delhimetrorail.com/media/original_images/customer-satisfaction-servey-2024-english.jpg" alt=""></a>
+</div>
+
+
+
+
+<div id="FOOTER_MAIN_DIV">
+
+
+    <div id="footer_categries">
+        <h1>CONTACT INFORMATION</h1>
+
+        <p>New Delhi - 110001, India<br>
+            EPABX - 011-23417910/11/12</p>
+
+    </div>
+
+
+
+    <div id="footer_categries">
+
+        <h1>QUICK LINKS</h1>
+    <a href="">Dust Control Measures Implemented At Sites</a>
+        <a href="">Vendor Payment Details</a>
+        <a href="">Customer Payment Link</a>
+        <a href="">List Of MD Awardees</a>
+    </div>
+
+
+    <div id="footer_categries">
+        <h1></h1>
+        <a href="">Public Notice</a>
+        <a href="">Stores Procurement Information</a>
+        <a href="">Contact Us</a>
+        <a href="">Public Grievances</a>
+        <a href="">Web Information Manager</a>
+    </div>
+
+
+    <div id="footer_categries">
+        <h1>Design,Developed & N c .Code</h1>
+
+        <p>© 2024 DMRC. All Rights Reserved</p>
+        
+    </div>
+</div>
+
+
+<div id="MOBILE_SOCIAL_DIV">
+
+    <a href="" class="fa fa-facebook"></a>
+
+    <a href="#" class="fa fa-twitter"></a>
+
+   <a href="#" class="fa fa-linkedin"></a>
+
+   <a href="#" class="fa fa-youtube"></a>
+
+    <a href="#" class="fa fa-instagram"></a>
+
+</div>
+
+</body>
+
+<script>
+    
+function open_nav(){
+        document.querySelector("#MOBILE_NAV_DIV").style.height='100%';
+
+        // document.querySelector("#meaida_categries_div").style.borderEnd='4px solid white';
+
+        document.querySelector("#OPEN_MOBILE_NAV").style.display="block";  
+        document.querySelector("#close_MOBILE_NAV").style.display="block";
+     
+     
+     }
+
+     function close_nav(){
+        document.querySelector("#MOBILE_NAV_DIV").style.height='0px';
+          document.querySelector("#close_MOBILE_NAV").style.display="none";
+          document.querySelector("#OPEN_MOBILE_NAV").style.display="block";  
+    
+
+    }
+</script>
+</html>
