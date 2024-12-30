@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My all web page </title>
+    <style>
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Bad+Script&family=Calligraffitti&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Galdeano&family=Lovers+Quarrel&family=M+PLUS+Rounded+1c&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Bad+Script&family=Calligraffitti&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Galdeano&family=Lovers+Quarrel&family=M+PLUS+Rounded+1c&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth
+        }
+
+     
+
+        
+
+       
+#first_mian_div{
+    width: 100%;
+    background-color: white;
+    padding:1% 2%;
+    margin: 3px 4px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#first_mian_div img{
+    width: 40px;
+    height: auto;
+}
+#first_mian_div  a{
+    text-align:right;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  float: right;
+
+}
+
+#first_mian_div a:hover{
+    border-bottom: 1px solid rgb(16, 255, 16);
+}
+
+#social_categries{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+#social_categries img{
+  margin: 0% 1%;
+  padding: 2%;
+  cursor: pointer;
+}
+
+        #Social_main_div{
+            width: 100%;
+            background-color: black;
+           padding: 1%;
+         
+           
+            display: grid;
+            grid-template-columns:  35% 40% 25%;
+        }
+        #social_categries{
+           
+            display: flex;
+        }
+
+        #social_categries h1{
+color: white;
+width: 100%;
+font-size: 14px;
+font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+
+        }
+
+        #navbar{
+            width: 100%;
+            background-color: hsl(0, 0%, 100%);
+            opacity: 0.6;
+            padding:1% 2%;
+            display: grid;
+            grid-template-columns: 15% 85%;
+            text-align:center;
+            position:relative;
+            top:-500;
+          
+            transform: translateY(0px);
+    box-shadow: 8px 8px 26px rgb(187, 186, 186);
+   
+    transition:all 0.3s ease;
+    z-index: 1;
+
+
+          
+        }
+
+        #navbar a{
+            color: black;
+            font-size: 18px;
+          text-decoration: none;
+          margin: 0% 2%;
+          padding:2%;
+          font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  position: relative;
+         
+        }
+
+
+        #navbar a:hover{
+          color:rgb(16, 255, 16);
+        }
+
+        #navbar a::after{
+    content: '';
+    height: 2px;
+    color: rgb(16, 255, 16);
+    width: 0%;
+    background:rgb(16, 255, 16);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+#navbar a:hover:after{
+    width: 100%;
+
+}
+
+#navbar button{
+    width:19%;
+    background-color:rgb(16, 255, 16);
+        
+            color: white;
+            border: none;
+            padding:16px;
+            font-size: 14px;
+          border-radius:40px;
+          
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal; 
+  transition: all 1s ease;
+        }
+
+        #navbar button:hover{
+            border-radius: 0px;
+            background-color: white;
+            color: black;
+            border: 3px solid rgb(16, 255, 16);
+        
+        }
+
+        #HOME_MAIN_DIV{
+            width: 100%;
+            height:500px;
+           
+            background-image: url("https://static.wixstatic.com/media/6e7d12_9b7dc6feff3f4f3a84086674f2215f2b~mv2.jpeg/v1/fill/w_1316,h_594,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6e7d12_9b7dc6feff3f4f3a84086674f2215f2b~mv2.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #home_categris{
+            width: 650px;
+           height:100%;
+            padding: 2% 3%;
+            background-color: hsl(0, 0%, 100%);
+            opacity:0.7;
+            text-align: center;
+        }
+
+        #home_categris h1{
+            color:rgb(16, 255, 16);
+            font-size: 32px;
+            padding:1% 2%;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+        }
+
+        #home_categris h1:hover{
+            color: red;
+        }
+        form{
+            width: 100%;
+            /* height: 100%;
+            padding:2%; */
+           
+        }
+
+    table tr td {
+            width: 100%;
+           
+    }
+
+        input{
+            width: 60%;
+            margin:2%;
+            padding: 2%;
+             border: none;
+            font-size: 14px;
+            border: 3px solid rgb(16, 255, 16);
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+ 
+        }
+
+        input:hover{
+            border: 3px solid red;
+        }
+
+        #home_categris button{
+            width: 60%;
+            padding: 2%;
+            color: white;
+            font-size: 16px;
+            background-color :rgb(16, 255, 16);
+          
+            border: none;
+            border-radius: 0px;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  cursor: pointer;
+  margin-top:2%;
+  transition: all 1s ease;
+        }
+
+        #home_categris button:hover{
+            background-color: red;
+        }
+
+
+
+
+        #ABOUT_MAIN_DIV{
+            width: 100%;
+            height: auto;
+            padding:4% 3%;
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+
+        #ABOUT_MAIN_DIV img{
+            width: 90%;
+            height:auto;
+        }
+
+        #about_categries{
+            width: 100%;
+            background-color: white;
+           
+        }
+        #about_categries h1{
+           
+            color: rgb(16, 255, 16);
+            font-size: 38px;
+            padding: 2%;
+            margin-left: 12%;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+          
+        }
+
+
+        #about_categries p{
+            color: black;
+    font-size: 16px;
+    padding: 6% 0%;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  
+        }
+
+
+        #about_categries button{
+width: 30%;
+padding: 2%;
+
+        
+color:black;
+border: 2px solid rgb(16, 255, 16);
+
+        font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 1s ease;
+  background-color: white;
+
+        }
+
+        #about_categries button:hover{
+background-color:rgb(16, 255, 16);
+color: white;
+border-radius: 34px;
+        }
+
+        #service_main_div{
+            width: 100%;
+            padding: 2%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+
+        #service_categries{
+            width: 90%;
+            height: auto;
+            justify-items: center;
+            text-align: center;
+            padding:4% 2%;
+         
+           margin: 6%;
+          
+           transform: translateY(0px);
+    box-shadow: 4px 4px 8px rgb(187, 186, 186);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    scale: 94%;
+ border-radius: 2% 10%;
+         
+
+        }
+        #service_categries:hover{
+            transform: translateY(-12px);
+            scale: 100%;
+            box-shadow: 12px 12px 32px rgb(187, 186, 186);
+        }
+        
+
+        #service_categries h1{
+            color: rgb(16, 255, 16);
+            font-size: 28px;
+            padding: 2%;
+            
+        font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+        }
+        
+
+        #service_categries p{
+            text-align:left;
+            font-size: 15px;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  padding: 3% 2%;
+        }
+
+        #body_div{
+            text-align: center;
+        }
+
+        #body_div h2{
+            color:rgb(16, 255, 16);
+            font-size: 50px;
+            padding: 2%;
+          
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+        }
+
+
+        #body_div1{
+            text-align: center;
+        }
+
+        #body_div1 h2{
+            color:rgb(16, 255, 16);
+            font-size: 50px;
+          padding: 1% 2%;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+        }
+
+
+        #CHOSE_MAIN_DIV{
+            width: 100%;
+            height: auto;
+            padding:2% 3%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+
+        #choese_categries1 img{
+            width: 95%;
+            height:95%;
+        }
+
+        #choese_categries{
+            width: 95%;
+            height: auto;
+            padding: 2% 4%;
+        }
+
+        #choese_categries h1{
+            color: rgb(16, 255, 16);
+            font-size: 40px;
+            padding: 2%;
+               
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+        }
+
+        #choese_categries p{
+            font-size: 16px;
+          padding: 2%;
+               
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal; 
+        }
+
+        #choese_categries button{
+            width: 30%;
+padding: 2%;    
+color:black;
+border: 2px solid rgb(16, 255, 16);
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 1s ease;
+  background-color: white;
+  margin: 3% 0%;
+        }
+
+
+        #choese_categries button:hover{
+            background-color:rgb(16, 255, 16);
+color: white;
+border-radius: 34px;
+        }
+        .progress-bar{
+            background-color:rgb(16, 255, 16);
+            text-align: right;
+            border-radius: 30px;
+          color:white;
+          font-size: 12px;
+          font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal; 
+  
+           
+        }
+
+        .progress{
+            background-color: rgb(231, 231, 231);  border-radius: 30px;
+          
+        }
+
+        .container{
+            background-color:white;
+            text-align:left;
+            margin: 3% 0%;
+
+        }
+
+        .container h2{
+            color: black;
+            font-size: 18px;
+            padding: 2%;
+                   
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal; 
+        }
+
+        #OurWork_main_div{
+            width: 100%;
+            height: auto;
+            background-color: white;
+            padding: 2%;
+            display:grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+
+        #ourwork_categries_div{
+            width: 95%;
+           height: auto;
+            padding: 2%;
+            margin: 4% 2%;
+            border-radius: 8px;
+            border: 4px solid rgb(16, 255, 16);
+            transform: translateY(0px);
+    box-shadow: 4px 4px 8px rgb(187, 186, 186);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    scale: 94%;
+        }
+
+        #ourwork_categries_div:hover{
+            transform: translateY(-12px);
+            scale: 100%;
+            box-shadow: 12px 12px 32px rgb(187, 186, 186);
+        }
+
+        #ourwork_categries_div img{
+            width: 100%;
+            height:auto;
+          
+        }
+        #logo_div{
+           
+        }
+
+        #logo_div img{
+            width:70px;
+            height: auto;
+            border-radius: 70%;
+            padding:1%;
+            
+        }
+
+        #FOOTER_MAIN_DIV{
+            width: 100%;
+            height: auto;
+            padding: 2% 8%;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 40% 40% 19%;
+        }
+
+       
+
+        #footer_categries img{
+            display: block;
+            padding: 2%;
+          
+        }
+
+        #footer_categries p{
+            color: white;
+            font-size: 16px;
+            padding: 2% 0%;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal; 
+        }
+
+        #footer_categries h1{
+            color: white;
+            font-size:22px;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal; 
+  padding:2% 0%;
+  margin-left: -4%;
+
+        }
+
+        #footer_categries a{
+            display: block;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 2% 0%;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal; 
+        }
+
+        #second_footer{
+            width: 100%;
+            background-color: rgb(16, 255, 16);
+           
+        }
+
+        #second_footer P{
+            color: white;padding: 2% 8%;
+            font-size: 16px;
+            font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal; 
+        }
+
+      
+    </style>
+</head>
+<body>
+
+
+    <div id="first_mian_div">
+
+        <div id="div_logo">
+            <img src="file:///C:/Users/Neeraj/Desktop/web%20folder/web%20name%20logo.jpg" alt="">
+        </div>
+
+        <div id="div_logo">
+            <a href="My all Web page.html"> This Website was Created By Nc My wesite.com</a>
+        </div>
+
+    </div>
+
+    <div id="Social_main_div">
+
+        <!-- <div id="social_categries">
+           <img src="" alt=""> <h1>7980114950</h1>
+
+        </div> -->
+
+
+
+        <div id="social_categries">
+
+            <h1><img src="" alt="">neerajchaudhary42309@gmail.com</h1>
+            
+        </div>
+
+
+        <div id="social_categries">
+
+            <h1><img src="" alt="">Opening: 10AM - 06PM</h1>
+
+            
+        </div>
+
+
+        <div id="social_categries">
+
+
+
+            <img src="https://static.wixstatic.com/media/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png" alt="">
+
+            <img src="https://static.wixstatic.com/media/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png" alt="">
+
+            <img src="https://static.wixstatic.com/media/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png" alt="">
+
+            <img src="https://static.wixstatic.com/media/11062b_7dcffe5daf2944b7be0a46ac6d472634~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7dcffe5daf2944b7be0a46ac6d472634~mv2.png" alt="">
+
+
+            <img src="https://static.wixstatic.com/media/11062b_a193068045064f4fa21b07cd12dae779~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_a193068045064f4fa21b07cd12dae779~mv2.png" alt="">
+            
+        </div>
+
+    </div>
+<nav id="navbar">
+
+    <div id="logo_div">
+
+        <img src="web name logo.jpg" alt="">
+
+    </div>
+
+
+
+    <div id="logo_div">
+    <a href="#HOME_MAIN_DIV">Home</a>
+
+    <a href="#ABOUT_MAIN_DIV">About Us</a>
+  
+
+    <a href="#body_div">Service</a>
+
+    <a href="#body_div1">Our Work</a>
+
+    <a href="">Contact Us</a>
+
+    <button>Whatsapp Us</button>
+
+    </div>
+</nav>
+
+
+<div id="HOME_MAIN_DIV">
+
+
+    <div id="home_categris">
+        <form>
+
+            <h1>Get Free Website Quote!</h1>
+            <tr>
+                <td colspan="1">
+                    <input type="text" name="" id=""placeholder="First Name">
+                </td>
+            </tr>
+
+        <tr>
+            <td colspan="1">
+
+
+                <input type="text" name="" id=""placeholder="Last Name">
+            </td>
+        </tr>
+
+           <tr>
+            <td colspan="1">
+                <input type="text" name="" id=""placeholder="Your Email">
+            </td>
+           </tr>
+
+           
+<tr>    <td colspan="1">
+    <input type="text" name="" id=""placeholder="Mobile No..">
+</td></tr>
+
+           
+
+          <tr>
+            <td colspan="2">
+            
+
+            <input type="text" name="" id=""placeholder="Tell us about Your Business need">
+          </td></tr>
+
+<tr>
+    <td colspan="2">
+        <button>Submit</button>
+    </td>
+</tr>
+         
+
+        </form>
+    </div>
+
+
+</div>
+
+
+
+<div id="ABOUT_MAIN_DIV">
+
+    <div id="about_categries1">
+    <img src="https://static.wixstatic.com/media/11062b_fbcc3e02ee054dd99aff8276525b94b1~mv2.jpg/v1/fill/w_391,h_513,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_fbcc3e02ee054dd99aff8276525b94b1~mv2.jpg" alt="">
+
+    </div>
+    <div id="about_categries">
+
+        <h1>ABOUT US</h1>
+       
+        <p>JP Tech Studio is a web design, development and digital marketing agency based in Delhi, India. We provide a wide range of services including web designing, web development, SEO, digital marketing, graphics design, app development, and more. We have a team of highly skilled and experienced professionals who are dedicated to providing our clients with the best possible results.<br><br>
+
+            JP Tech Studio was founded in 2019 with the vision of providing quality web design and development services to businesses of all sizes. We understand that the key to success in the online world is to have a website that is not only aesthetically pleasing but also functional and easy to use. That is why we always put our clients' needs first and work tirelessly to create websites that meet their specific goals and objectives.<br><br>
+            
+            ​
+            
+            If you are looking for a reliable partner to help you achieve your online goals, then look no further than JP Tech Studio. Contact us today to learn more about our services and how we can help you take your business to the next level.</p>
+
+           <a href=""> <button>LEARN MORE</button></a>
+
+    </div>
+</div>
+
+<div id="body_div">
+    <h2>
+        Services We Offer</h2>
+</div>
+
+<div id="service_main_div">
+
+
+
+<div id="service_categries">
+    <img src="https://static.wixstatic.com/media/6e7d12_12e6589f068a415492832fef71d22db7~mv2.png/v1/fill/w_100,h_103,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/R-removebg-preview.png" alt="">
+
+    <h1>Web Devlopment</h1>
+
+    <p>We offer a wide range of web design and development services for businesses. Our team of experts will work with you to create the perfect website for your business. We can help you build your site from scratch, or we can take an existing website and make it better.</p>
+</div>
+
+
+
+
+<div id="service_categries">
+
+    <img src="https://static.wixstatic.com/media/6e7d12_6ee3cd4f25b74b2686db974bd104552b~mv2.png/v1/fill/w_100,h_103,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo-mobile-app-development-mobile-dialer-png-favpng-Mqc064CUcF7Y2YCJyTTjhLfN5-removebg-pr.png" alt="">
+
+    <h1>App Developer</h1>
+
+    <p>We help businesses create mobile applications that they can use on any device, including smartphones and tablets. Our developers will create a fully functional mobile application that meets all of your needs and offers an intuitive user experience. </p>
+
+</div>
+
+
+
+<div id="service_categries">
+
+    <img src="https://static.wixstatic.com/media/6e7d12_15cb09c5c6e749e5abcf1288635e3dc3~mv2.png/v1/fill/w_100,h_103,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/digital-marketing-small-business-marketing-strategy-png-favpng-Q42FGYy492JDkGK1MJQg1khGr-r.png" alt="">
+
+
+    <h1>
+Digital Marketing</h1>
+
+
+<p>We specialize in helping startups and small businesses get their pages more visible on social media, optimize their SEO, and use content marketing to reach new audiences. We'll give your business the tools and support it needs to thrive in a world where everyone has access to everything.</p>
+
+</div>
+
+
+
+<div id="service_categries">
+    <img src="https://static.wixstatic.com/media/6e7d12_2677542e691c468e9b6afc67cd0d3cd7~mv2.png/v1/fill/w_153,h_103,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/istockphoto-1133937441-612x612-removebg-preview.png" alt="">
+
+    <h1>E-Commerce</h1>
+
+    <p>We specialize in creating e-commerce solutions for businesses that want to sell products online. Our team of experienced developers are dedicated to helping businesses grow that will increase their revenue and reduce costs.</p>
+
+</div>
+
+
+
+
+
+
+<div id="service_categries">
+    <img src="https://static.wixstatic.com/media/6e7d12_d649ce5ab177416fbd4e1b4a5f68c50c~mv2.png/v1/fill/w_115,h_103,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PngItem_4789273.png" alt="">
+
+
+    <h1>Graphics Design</h1>
+
+    <p>Our services include logo design, website design, social media graphics, print material production… the list goes on! So if there's something you're looking into doing but aren't sure where to start or what would be best suited for your company's needs, we'd love to help!</p>
+
+</div>
+
+
+
+
+
+
+<div id="service_categries">
+
+    <img src="https://static.wixstatic.com/media/6e7d12_6a100a22e42c4d0fa3bf2434c324ddf4~mv2.png/v1/fill/w_124,h_103,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PrintVector-1024x853.png" alt="">
+
+    <h1>Printing</h1>
+
+    <p>Give your business a professional boost with our custom printed products. Whether you’re looking to create sophisticated business cards, posters for an event or exhibition, or invitations for your next gathering, we can help you achieve whatever look and feel you need.</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="CHOSE_MAIN_DIV">
+
+
+    <div id="choese_categries">
+        <h1>Why Choose Us</h1>
+
+        <p>
+            Why Choose Us
+            
+            "At JP Tech Studio, we believe that our clients deserve the very best. That's why we strive to provide high-quality services that meet their needs and exceed their expectations.<br><br>
+
+            Our team of experienced professionals is dedicated to delivering exceptional customer service and going the extra mile to ensure that our client are completely satisfied with their experiences. We are always looking for new and innovative ways to solve problems and meet the evolving needs of our clients.</p>
+
+
+
+            <div class="container">
+                <h2>Graphics Designing</h2>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                    <span class="sr-only">85%</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="container">
+                <h2>Digital Marketing</h2>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    <span class="sr-only">90%</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="container">
+                <h2>Design & Development</h2>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                    <span class="sr-only">95%</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+             <a href=""> <button>LEARN MORE</button></a>
+
+    </div>
+
+
+
+
+    <div id="choese_categries1">
+
+        <img src="https://static.wixstatic.com/media/nsplsh_dde616d091f346f186c29e91cecd8526~mv2.jpg/v1/fill/w_391,h_572,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/nsplsh_dde616d091f346f186c29e91cecd8526~mv2.jpg" alt="">
+        
+    </div>
+</div>
+
+
+
+<div id="body_div1">
+    <h2>
+        Our Work</h2>
+</div>
+
+<div id="OurWork_main_div">
+
+    <div id="ourwork_categries_div">
+        <img src="data entry img.jpg" alt="">
+    </div>
+
+
+    <div id="ourwork_categries_div">
+        <img src="Smart watch img.jpg" alt="">
+    </div>
+
+
+    <div id="ourwork_categries_div">
+        <img src="Hp Laptop Home img.jpg" alt="">
+    </div>
+
+
+
+    <div id="ourwork_categries_div">
+
+        <img src="https://siteress.com/carddesgin20.jpg.png" loading="lazy" alt="">
+        </div>
+
+
+
+          <div id="ourwork_categries_div">
+    <img src="https://siteress.com/website%20design23.png" loading="lazy" alt="">
+    </div>
+
+
+   
+
+
+
+
+    <div id="ourwork_categries_div">
+        <img src="collage img.jpg" alt="">
+    </div>
+
+
+  
+
+
+    <div id="ourwork_categries_div">
+        <img src="Nike shoes img.jpg" alt="">
+    </div>
+
+
+
+
+    <div id="ourwork_categries_div">
+        <img src="Payroll img.jpg" alt="">
+    </div>
+
+
+    <div id="ourwork_categries_div">
+        <img src="Coffe.jpg"loading="lazy" alt="">
+    </div>
+
+
+    <div id="ourwork_categries_div">
+        <img src="sms img.jpg" alt="">
+    </div>
+
+
+
+    
+
+
+    <div id="ourwork_categries_div">
+    <img src="https://siteress.com/website%20design14.png" loading="lazy" alt="">
+    </div>
+
+
+
+
+
+
+
+    <div id="ourwork_categries_div">
+        <img src="Service img.jpg" alt="">
+    </div>
+  
+
+    <div id="ourwork_categries_div">
+    <img src="https://siteress.com/carddesgin22.png" loading="lazy" alt="">
+    </div>
+
+    <div id="ourwork_categries_div">
+    <img src="Przo Home img.jpg" loading="lazy" alt="">
+    </div>
+
+
+    <div id="ourwork_categries_div">
+        <img src="LEMBORGINI HOME IMG.jpg" loading="lazy" alt="">
+        </div>
+
+</div>
+
+
+<div id="FOOTER_MAIN_DIV">
+
+
+    <div id="footer_categries">
+
+        <div id="address_categries">
+            <h1>Address</h1>
+            <img src="" alt=""><p>C-2/92, New Ashok Nagar,
+
+                Delhi - 96, India
+                
+                </p>
+        </div>
+
+
+        <div id="address_categries">
+
+         
+            <img src="" alt=""><p>+(91) 807 665 6801</p>
+        </div>
+
+
+
+        <div id="address_categries">
+            <img src="" alt=""><a href="">neerajchaudhary42309@gmail.com</a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="footer_categries">
+        <h1>Quick Links</h1>
+
+        <a href="#navbar">Home</a>
+
+        <a href="#ABOUT_MAIN_DIV">About Us</a>
+        <a href="#body_div">Service</a>
+       
+        <a href="#body_div1">Our Work</a>
+        
+        
+        <a href="">Contact Us</a>
+
+    </div>
+
+
+
+
+    <div id="footer_categries">
+
+        <h1>Follow Us</h1>
+
+
+        <img src="https://static.wixstatic.com/media/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png" alt="">
+
+        <img src="https://static.wixstatic.com/media/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png" alt="">
+
+        <img src="https://static.wixstatic.com/media/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png" alt="">
+
+        <img src="https://static.wixstatic.com/media/11062b_7dcffe5daf2944b7be0a46ac6d472634~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7dcffe5daf2944b7be0a46ac6d472634~mv2.png" alt="">
+
+
+        <img src="https://static.wixstatic.com/media/11062b_a193068045064f4fa21b07cd12dae779~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_a193068045064f4fa21b07cd12dae779~mv2.png" alt="">
+
+    </div>
+</div>
+
+<div id="second_footer">
+    <p>2024 © NC code. All Right Reserved.</p>
+</div>
+
+
+    
+</body>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "-500px";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+}
+
+</script>
+</html>
