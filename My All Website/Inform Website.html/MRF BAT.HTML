@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRF BAT WEBSITE</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overlock+SC&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        nav{
+            width: 100%;
+            background-color: rgb(218, 3, 3);
+          
+            /* text-align: right; */
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+        #logo_div1 h1{
+            /* color: white;
+            font-size: 22px;
+            font-family: "Fjalla One", sans-serif;
+  font-weight: 900;
+  font-style: normal; */
+        }
+
+        #logo_div{
+            text-align: right;
+            padding:3% 2%;
+        }
+        nav a{
+            color: white;
+            padding:3% 2%;
+            transition: all 1s ease;
+            text-decoration: none;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+ 
+            
+        }
+
+
+        nav a:hover{
+            background-color: white;
+            color: red;
+        }
+
+        #HOME_MAIN_DIV{
+            width:100%;
+            height: 570px;
+            background-image: url("https://www.mrfsports.com/sites/all/themes/adaptivetheme/at_subtheme/images/home-banner.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #ABOUT_MAIN_DIV{
+            width: 100%;
+            height: auto;
+            padding:0% 10%;
+            background-color: white;
+        }
+
+        #ABOUT_CATEGRIES{
+            width: 100%;
+            height: 500px;
+            padding: 2%;
+            background-color:white;
+            display: grid;
+            grid-template-columns: 40% 40% 20%;
+        
+            box-shadow:0px 40px 40px;
+        }
+
+        #about_small_div{
+            width: 95%;
+            height: auto;
+            padding: 2% 4%;
+            text-align: center;
+        }
+
+        #about_small_div img{
+            width: 100%;
+            height: auto;
+        }
+
+        #my_firstbtn{
+            width: 80%;
+            padding:6% 2%;
+            border: none;
+            background-color:rgb(233, 230, 230);
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color:black;
+  margin-top:4%;
+  border-radius: 8px;
+  border-left: 3px solid red;
+  border-right: 3px solid red;
+  cursor: pointer;
+
+ /* clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 10%); */
+        }
+        #range_btn{
+            width: 50%;
+            height:42px;
+            background-color: red;
+            color: white;
+            padding:3% 2%;
+            border: none;
+            margin-top:4%;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transform: translateX(-100px);
+  cursor: pointer;
+  transition: all 0.5s ease;
+ 
+ 
+        }
+
+        #range_btn:hover{
+            background-color: white;
+            border: 2px solid red;
+            color: black;
+            border-radius: 4px;
+        }
+        #GOLOPS_MAIN_DIV{
+            width: 100%;
+            height:auto;
+            padding:0% 10%;
+            background-color: white;
+        }
+        #GOLOPS_SECOND_CATE_ALL{
+            width: 100%;
+            height:auto;
+            padding:12% 2%;
+           
+            background-color:white;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        
+            box-shadow:0px 40px 40px;
+        }
+
+        #golops_categries_div{
+            width: 95%;
+            height: auto;
+            padding:2%;
+            margin:2% 0%;
+            border: 2px solid rgb(240, 239, 239);
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+       
+        }
+        #golops_categries_div img{
+            width: 100%;
+            height: auto;
+        }
+
+        #golops_categries_div a{
+            color: rgb(204, 4, 4);
+            text-decoration: none;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  padding:2% 0%;
+  margin: 3% 0%;
+        }
+
+        #golops_categries_div1{
+            width: 95%;
+            height:300px;
+            padding: 2%;
+            border: 2px solid rgb(240, 239, 239);
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            margin-top:8%;
+        }
+        #golops_categries_div1 a{
+            color: rgb(204, 4, 4);
+            text-decoration: none;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  padding:2% 0%;
+  margin: 3% 0%;
+  line-height:210px;
+        }
+
+        #WELCOME_main_div{
+            width: 100%;
+            height: auto;
+            padding:0% 10%;
+            background-color: white;
+        }
+
+        #WELCOME_second{
+            width: 100%;
+            height:auto;
+            padding:12% 2%;
+           
+            background-color:black;
+            opacity:0.7;
+            display: grid;
+            grid-template-columns:50% 50%;
+        
+            box-shadow:0px 40px 40px;
+        }
+
+        #welcome_categries1{
+            width: 95%;
+            height: auto;
+            padding:0% 2%;
+        }
+
+        #welcome_categries1 h1{
+            font-size: 32px;
+            color: white;
+            padding:2%;
+            border-bottom:1px solid white;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+        }
+
+        #welcome_categries1 p{
+            color: white;
+            font-size: 16px;
+            padding: 2%;
+            font-family: "Overlock SC", sans-serif;
+  font-weight:400;
+  font-style: normal;
+        }
+
+
+        #welcome_categries{
+            width: 95%;
+            padding: 8% 0%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        #welcome_categries h1{
+            width: 36%;
+            color: white;
+            border-bottom: 4px solid white;
+            font-size: 32px;
+            color: white;
+            padding:2% 0%;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color:red;
+position: absolute;
+margin-top: -7%;
+        }
+
+        #welcome_small h2{
+            color: white;
+            font-size: 21px;
+            color: white;
+            padding:2%;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+        }
+
+        #welcome_small p{
+            color: white;
+            font-size: 14px;
+            color: white;
+            padding:2%;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        #welcome_small input{
+            width: 95%;
+            padding:3%;
+            border:2px solid white;
+            font-size: 14px;
+            margin: 3% 0%;
+            border-radius: 4px;
+        }
+
+
+        #welcome_small{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 2%  0%;
+            background-color:red;
+        }
+        #welcome_small1 img{
+            width: 100%;
+            height: auto;
+          
+        }
+
+        #welcome_small1{
+          padding-right: 2%;
+            height: auto;
+            width: 100%;
+           
+            
+        }
+        #myBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 2px;
+  transition: all 1s ease;
+  font-family: "Overlock SC", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#myBtn:hover {
+  background-color:black;
+  color:white;
+}
+#footer_div{
+    background-color:black;
+    padding: 4%;
+    box-shadow:0px 40px 40px;
+   
+}
+
+#footer_div p{
+    font-size: 18px;
+            color: white;
+            padding:2%;
+            font-family: "Overlock SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+
+        <div id="logo_div1">
+           <img src="" alt="">
+
+        </div>
+
+        <div id="logo_div">
+            
+        
+        <a href="">HOME</a>
+
+        <a href="">PRODUCT</a>
+        
+        <a href="">WILLOW TALK</a>
+
+        <a href="">STORE LOCATOR</a>
+
+        <a href="">CONTACT US</a>
+        </div>
+    </nav>
+
+
+    <div id="HOME_MAIN_DIV">
+  
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" height="28px"background-color="white" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></button>
+
+    <div id="ABOUT_MAIN_DIV">
+
+
+        <div id="ABOUT_CATEGRIES">
+
+            <div id="about_small_div">
+                <a href=""><button id="range_btn">RANGE</button></a>
+                <img src="https://www.mrfsports.com/sites/default/files/styles/homepage_bat_listing/public/game-changer-listing_1.png?itok=Pg0K521F" alt="">
+                <button id="my_firstbtn">VIRAT KOHLI ENGLISH WILLOW</button>
+               
+
+            </div>
+
+
+
+ <div id="about_small_div">
+    <a href=""><button id="range_btn">RANGE</button></a>
+    <img src="https://www.mrfsports.com/sites/default/files/styles/homepage_bat_listing/public/game-changer-listing_1.png?itok=Pg0K521F" alt="">
+
+    <button id="my_firstbtn">VIRAT KOHLI KASHMIR WILLOW</button>
+  
+                
+            </div>
+
+
+
+            <div id="about_small_div">
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="GOLOPS_MAIN_DIV">
+
+        <div id="GOLOPS_SECOND_CATE_ALL">
+
+     
+
+
+        <div id="golops_categries_div">
+
+            <img src="https://www.mrfsports.com/sites/all/themes/adaptivetheme/at_subtheme/images/junior-kits-listing.png" alt="">
+
+            <a href="">JUNIOR CRICET KITS </a>
+
+        </div>
+
+
+        <div id="golops_categries_div">
+            
+
+            <img src="https://www.mrfsports.com/sites/all/themes/adaptivetheme/at_subtheme/images/protective_gears_main3.png" alt="">
+            <a href="">PROTECTIVE EQUIPMENTS</a>
+            
+        </div>
+
+
+
+
+
+        <div id="golops_categries_div">
+
+            <img src="https://www.mrfsports.com/sites/all/themes/adaptivetheme/at_subtheme/images/kitbag-listing-game-changer.png" alt="">
+            <a href="">OTHER PRODUCTS</a>
+            
+        </div>
+
+
+
+        <div id="golops_categries_div1">
+            
+            <a href="">VIEW ALL PRODUCTS</a>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <div id="WELCOME_main_div">
+
+        <div id="WELCOME_second">
+
+        
+
+
+        <div id="welcome_categries1">
+            <h1>WELCOME TO
+                MRF SPORTS GOOD</h1>
+                <p>MRF's association with sports in India, especially cricket, goes all the way back to the 1980s. We took it to the next level in the 1990s when some of the world's best batsmen wielded bats sponsored by us, playing unforgettable knocks that swept you through a whole range of emotions. Now we take a step closer to you. Presenting MRF Sports Goods, available at over 350 stores across the country.</p>
+        </div>
+   
+        <div id="welcome_categries">
+            
+
+            <div id="welcome_small">
+                <h1>STORE LOCATOR</h1>
+                <h2>WHERE ARE YOU?</h2>
+                <p>We will find a store near you</p>
+
+                <input type="text"placeholder="TYPE YOUR CITY ">
+
+            </div>
+
+            <div id="welcome_small1">
+                <img src="https://www.mrfsports.com/sites/all/themes/adaptivetheme/at_subtheme/images/contact.jpg" alt="">
+                
+            </div>
+        </div>
+
+    </div>
+    <div id="footer_div">
+        <p>2023.@NC - code..</p>
+
+    </div>
+    </div>
+   
+</body>
+
+<script>
+     let mybutton = document.getElementById("myBtn");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+  
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+</html>
